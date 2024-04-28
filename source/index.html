@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
-<body class="page__body">
+<body class="page page__body">
 
   <header class="main-header">
     <a class="main-header__logo">
-      <img class="main-header__logo-image" src="img/logo-img.svg" alt="Логотип Кэт энерджи" width="60" height="50">
-      <p class="main-header__logo-text">cat energy</p>
+      <img class="main-header__logo-image" src="img/logo-img.png" alt="Логотип Кэт энерджи" width="60" height="50">
+      <img class="main-header__logo-text logo" src="img/logo-text.svg" alt="Кэт энерджи">
     </a>
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
@@ -44,7 +44,6 @@
     </section>
 
     <section class="food-type">
-      <h1 class="visually-hidden">Типы питания</h1>
 
       <article class="food-type__item">
         <img src="img/cat-slim.svg" alt="Похудение" width="100" height="106">
@@ -63,13 +62,11 @@
     </section>
 
     <section class="how-it-works">
-      <h1 class="how-it-works__title">Как это работает</h1>
+      <h2 class="how-it-works__title">Как это работает</h2>
       <ul class="how-it-works__list">
         <li class="how-it-works__item">
           <p class="how-it-works__text">
-            Функциональное питание
-            содержит только полезные
-            питательные вещества.
+            Функциональное питание содержит только полезные питательные вещества.
           </p>
         </li>
         <li>
@@ -79,26 +76,21 @@
         </li>
         <li class="how-it-works__item">
           <p class="how-it-works__text">
-            Замените один-два приема
-            обычной еды на наше
-            функциональное питание.
+            Замените один-два приема обычной еды на наше функциональное питание.
           </p>
         </li>
         <li class="how-it-works__item">
           <p class="how-it-works__text">
-            Уже через месяц наслаждайтесь
-            изменениями к лучшему
-            вашего питомца!
+            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
           </p>
       </ul>
     </section>
 
     <section class="example">
-      <h1 class="example__title">Живой пример</h1>
-      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой
-        обычный корм на Cat Energy Slim. Отличный результат
-        без изнуряющих тренировок! При этом он не менял своих
-        привычек и по-прежнему спит по 16 часов в день. </p>
+      <h2 class="example__title">Живой пример</h2>
+      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
+        в день. </p>
       <dl class="example__info-list">
         <div class="example__info-item">
           <dt class="example__info-title">5 кг</dt>
@@ -113,38 +105,36 @@
         <span class="example__cost-title"> Затраты на питание:</span>
         <span class="example__cost">15 000 руб.</span>
       </div>
-      <div class="example__image-wrapper">
-        <img class="example__image" src="img/cat-example-before.png" alt="Пример до" width="560" height="512">
-        <img class="example__image" src="img/cat-example-after.png" alt="Пример после" width="560" height="512">
-      </div>
     </section>
+    <div class="example-slider">
+      <img class="example__image" src="img/cat-example-before.png" alt="Пример до" width="560" height="512">
+      <img class="example__image" src="img/cat-example-after.png" alt="Пример после" width="560" height="512">
+    </div>
+  </main>
 
+  <footer class="main-footer">
     <section class="adress">
-      <h1 class="visually-hidden">Приглашаем к сотрудничеству дилеров!</h1>
       <div class="adress__container">
         <p class="adress__text">Приглашаем к сотрудничеству дилеров! </p>
         <address class="adress__info"><a class="adress__link" href="#">ул. Большая Конюшенная, д. 19/8</a></address>
       </div>
     </section>
-
-  </main>
-
-  <footer class="main-footer">
-    <a class="main-footer__logo">cat energy</a>
-    <ul class="main-footer__social-list">
-      <li class="main-footer__social-item">
-        <a class="main-footer__social-link" href="#">
-          <img src="img/vkontakte.svg" alt="Вконтакте" width="28" height="22">
+    <a class="main-footer__logo"><img class="main-footer__logo-image logo" src="img/logo-text.svg"
+        alt="Логотип Кэт энерджи"></a>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="#">
+          <img class="social-list__icon" src="img/vkontakte.svg" alt="Вконтакте" width="28" height="22">
         </a>
       </li>
-      <li class="main-footer__social-item">
-        <a class="main-footer__social-link" href="#">
-          <img src="img/youtube.svg" alt="Ютуб" width="28" height="22">
+      <li class="social-list__item">
+        <a class="social-list__link" href="#">
+          <img class="social-list__icon" src="img/youtube.svg" alt="Ютуб" width="28" height="22">
         </a>
       </li>
-      <li class="main-footer__social-item">
-        <a class="main-footer__social-link" href="#">
-          <img src="img/telegram.svg" alt="Телеграм" width="28" height="22">
+      <li class="social-list__item">
+        <a class="social-list__link" href="#">
+          <img class="social-list__icon" src="img/telegram.svg" alt="Телеграм" width="28" height="22">
         </a>
       </li>
     </ul>
