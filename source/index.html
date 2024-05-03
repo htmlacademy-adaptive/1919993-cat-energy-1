@@ -9,14 +9,14 @@
 <body class="page">
 
   <header class="main-header">
-    <a class="main-header__logo">
-      <img class="main-header__logo-image" src="img/logo-image.svg" alt="Логотип Кэт энерджи" width="60" height="50">
-      <img class="main-header__logo-text logo" src="img/logo-text.svg" alt="Кэт энерджи">
+    <a class="main-header__logo logo">
+      <img class="logo__image" src="img/logo-image.svg" alt="Логотип Кэт энерджи" width="60" height="50">
+      <img class="logo__text" src="img/logo-text.svg" alt="Кэт энерджи">
     </a>
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <span class="site-list__navigation">
+        <li class="site-list__item">
+          <span class="site-list__navigation site-list__item--active">
             главная
           </span>
         </li>
@@ -39,7 +39,7 @@
     <section class="hero">
       <h1 class="hero__title">Функциональное питание для котов</h1>
       <p class="hero__text">Занялся собой? Займись котом!</p>
-      <a class="hero__button" href="#">Подобрать программу</a>
+      <a class="button" href="#">Подобрать программу</a>
       <img class="hero__image" src="img/hero-image.png" alt="Функциональное питание для котов">
     </section>
 
@@ -114,13 +114,15 @@
 
   <footer class="main-footer">
     <section class="adress">
+      <h2 class="visually-hidden">Приглашаем к сотрудничеству дилеров!</h2>
       <div class="adress__container">
-        <p class="adress__text">Приглашаем к сотрудничеству дилеров! </p>
+        <p class="adress__text">Приглашаем к сотрудничеству дилеров!</p>
         <address class="adress__info"><a class="adress__link" href="#">ул. Большая Конюшенная, д. 19/8</a></address>
       </div>
     </section>
-    <a class="main-footer__logo"><img class="main-footer__logo-image logo" src="img/logo-text.svg"
-        alt="Логотип Кэт энерджи"></a>
+    <a class="main-footer__logo logo">
+      <img class="logo__text" src="img/logo-text.svg" alt="Логотип Кэт энерджи">
+    </a>
     <ul class="social-list">
       <li class="social-list__item">
         <a class="social-list__link" href="#">
