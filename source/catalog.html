@@ -21,7 +21,7 @@
           </a>
         </li>
         <li class="site-list__item">
-          <span class="site-list__navigation site-list__item--active">
+          <span class="site-list__navigation site-list__navigation--active">
             каталог продукции
           </span>
         </li>
@@ -35,7 +35,7 @@
   </header>
 
   <main class="main-conteiner catalog">
-    <h1 class="catalog_title">Каталог продукции</h1>
+    <h1 class="catalog__title">Каталог продукции</h1>
     <section class="catalog-container">
       <h2 class="visually-hidden">Каталог</h2>
       <ul class="catalog__list">
@@ -120,7 +120,7 @@
         <li class="catalog-item">
           <h3 class="catalog-item__title">cat energy pro 500 г</h3>
           <img class="catalog-item__image" src="img/taste-rice-medium.png" alt="Вкус риса">
-          <dl class="description-list">
+          <dl class="catalog-item__description description-list">
             <dt class="description-list__termin">Масса</dt>
             <dd class="description-list__value">500 г</dd>
             <dt class="description-list__termin">Вкус</dt>
@@ -130,11 +130,11 @@
           </dl>
           <a class="catalog-item__button button--secondary button" href="#">заказать</a>
         </li>
-        <li class="catalog-item catalog-item--show-more">
-          <img class="catalog__image--show-more" src="img/more-image.svg" alt="Показать еще" width="50" height="60">
-          <p class="catalog__text catalog__text--grey">Показать еще 100500 товаров</p>
-          <p class="catalog__text catalog__text--thin"> На самом деле вкусов гораздо больше!</p>
-          <a class="catalog__button--show-more" href="#"><span>показать все</span></a>
+        <li class="catalog-item">
+          <img class="catalog-item__image" src="img/more-image.svg" alt="Показать еще" width="50" height="60">
+          <h3 class="catalog-item__title">Показать еще 100500 товаров</h3>
+          <p class="catalog-item__description"> На самом деле вкусов гораздо больше!</p>
+          <a class="catalog__button button" href="#"><span>показать все</span></a>
         </li>
     </section>
 
@@ -145,25 +145,25 @@
           <h3 class="additional-item__title">сахарозаменитель</h3>
           <p class="additional-item__value">1 упаковка (100 г)</p>
           <span class="additional-item__price">200 ₽</span>
-          <a class="button additional__button" href="#">заказать</a>
+          <a class="additional-item__button button" href="#">заказать</a>
         </li>
         <li class="additional-item">
           <h3 class="additional-item__title">питьевая вода</h3>
           <p class="additional-item__value">5 литров</p>
           <span class="additional-item__price">50 ₽</span>
-          <a class="button additional__button" href="#">заказать</a>
+          <a class="additional-item__button button" href="#">заказать</a>
         </li>
         <li class="additional-item">
           <h3 class="additional-item__title">молоко</h3>
           <p class="additional-item__value">1 литр</p>
           <span class="additional-item__price">100 ₽</span>
-          <a class="button additional__button" href="#">заказать</a>
+          <a class="additional-item__button button" href="#">заказать</a>
         </li>
         <li class="additional-item">
           <h3 class="additional-item__title">витамины</h3>
           <p class="additional-item__value">1 упаковка (30 г)</p>
           <span class="additional-item__price">300 ₽</span>
-          <a class="button additional__button" href="#">заказать</a>
+          <a class="additional-item__button button" href="#">заказать</a>
         </li>
       </ul>
     </section>
