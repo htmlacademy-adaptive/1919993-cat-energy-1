@@ -20,7 +20,7 @@
           </a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__navigation" href="form.html">
+          <a class="site-list__navigation" href="catalog.html">
             каталог продукции
           </a>
         </li>
@@ -32,9 +32,9 @@
       </ul>
     </nav>
   </header>
-  <main class="main-conteiner form-conteiner">
-    <h1 class="form-conteiner__title">Подбор программы</h1>
-    <p class="form-conteiner__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
+  <main class="main-container form-container">
+    <h1 class="form-container__title">Подбор программы</h1>
+    <p class="form-container__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
 
       <fieldset class="fieldset-container form-info">
@@ -56,13 +56,16 @@
       <fieldset class="fieldset-container form-type">
         <legend class="visually-hidden">тип корма</legend>
         <label class="label-type">
-          <input class="label-type__input" type="radio" name="type" value="похудение" checked>
+          <input class="label-type__input" type="radio" name="type" value="lose-weight" checked>
+          <span class="label-type__text">похудение</span>
         </label>
         <label class="label-type">
-          <input class="label-type__input" type="radio" name="type" value="Набор массы">
+          <input class="label-type__input" type="radio" name="type" value="gain-weight">
+          <span class="label-type__text">Набор массы</span>
         </label>
         <label class="label-type">
-          <input class="label-type__input" type="radio" name="type" value="Не знаю (Нужен ваш совет)">
+          <input class="label-type__input" type="radio" name="type" value="advice">
+          <span class="label-type__text">Не знаю (Нужен ваш совет)</span>
         </label>
       </fieldset>
 
@@ -89,19 +92,19 @@
       <fieldset class="fieldset-container form-extra">
         <legend class="form-extra__title">Дополнительно</legend>
         <label class="label-extra">
-          <input class="label-extra__input" type="checkbox" name="checkbox" checked>
+          <input class="label-extra__input" type="checkbox" name="checkbox" value="sweetener" checked>
           <span class="label-extra__text">сахарозаменитель</span>
         </label>
         <label class="label-extra">
-          <input class="label-extra__input" type="checkbox" name="checkbox">
+          <input class="label-extra__input" type="checkbox" name="checkbox" value="water">
           <span class="label-extra__text">питьевая вода</span>
         </label>
         <label class="label-extra">
-          <input class="label-extra__input" type="checkbox" name="checkbox">
+          <input class="label-extra__input" type="checkbox" name="checkbox" value="milk">
           <span class="label-extra__text">молоко</span>
         </label>
         <label class="label-extra">
-          <input class="label-extra__input" type="checkbox" name="checkbox">
+          <input class="label-extra__input" type="checkbox" name="checkbox" value="vitamins">
           <span class="label-extra__text">витамины</span>
         </label>
         <button class="form__button button" type="submit">отправить заявку</button>
