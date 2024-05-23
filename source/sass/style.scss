@@ -1,1 +1,19 @@
 // Начните писать стили здесь
+@use "./base.scss";
+@use "./fonts.scss";
+@use "./common.scss";
+@use "./blocks/main-header.scss";
+@use "./blocks/hero.scss";
+@use "./blocks/food-type.scss";
+@use "./blocks/how-it-works.scss";
+@use "./blocks/example.scss";
+@use "./blocks/address.scss";
+@use "./blocks/main-footer.scss";
+@use "./blocks/catalog.scss";
+@use "./blocks/catalog-list-container.scss";
+@use "./blocks/additional.scss";
+@use "./blocks/promo.scss";
+@use "./blocks/form-container.scss";
+
+
+

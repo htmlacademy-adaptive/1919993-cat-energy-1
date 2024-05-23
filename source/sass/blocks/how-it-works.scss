@@ -1,0 +1,37 @@
+.how-it-works {
+  margin-bottom: 49px;
+}
+
+.how-it-works__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 111%;
+  color: #000;
+}
+
+.how-it-works-list {
+  padding: 0;
+}
+
+.how-it-works-item {
+  display: flex;
+  align-items: center;
+}
+
+.icon-container {
+  width: 60px;
+  height: 60px;
+  background: #68b738;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.how-it-works-item__text {
+  width: 200px;
+  margin-left: 20px;
+  font-size: 14px;
+  line-height: 129%;
+  color: #444;
+}
