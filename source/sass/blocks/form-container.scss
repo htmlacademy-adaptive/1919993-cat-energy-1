@@ -1,5 +1,5 @@
 .form-container__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $accent-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 100%;
@@ -9,7 +9,7 @@
 }
 
 .form-container__text {
-  font-family: "Oswald", sans-serif;
+  font-family: $accent-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 129%;
@@ -17,112 +17,4 @@
   color: #000000;
   margin-bottom: 39px;
   margin-top: 32px;
-}
-
-.label__text {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 112%;
-  text-transform: uppercase;
-  color: #444444;
-}
-
-.form-title {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 108%;
-  color: #000000;
-}
-
-.form-info,
-.form-type {
-  display: flex;
-  flex-direction: column;
-  border-bottom: 1px solid #d9d9d9;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  width: 320px;
-  padding: 0;
-}
-
-.form-type {
-  margin-top: 22px;
-}
-
-.form-feed,
-.form-feedback,
-.form-extra {
-  border: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.label-info {
-  width: 280px;
-  display: flex;
-}
-
-.label-info__input {
-  border: 1px solid #cdcdcd;
-  width: 213px;
-  height: 45px;
-  margin-left: 13px;
-  padding-left: 15px;
-}
-
-.label-type__text {
-  margin-left: 15px;
-}
-
-.form-feed {
-  margin-top: 26px;
-}
-
-.label-feed__input {
-  border: 1px solid #cdcdcd;
-  width: 202px;
-  height: 45px;
-  margin-left: 13px;
-  padding-left: 15px;
-}
-
-.label-feed__email {
-  background-image: url("../img/form-email.svg");
-  background-repeat: no-repeat;
-  background-position: center right 14px;
-}
-
-.label-feed__tel {
-  background-image: url("../img/form-tel.svg");
-  background-repeat: no-repeat;
-  background-position: center right 14px;
-}
-
-.form-feedback {
-  margin-top: 24px;
-}
-
-.form-feedback__input {
-  min-height: 150px;
-  width: 280px;
-  border: 1px solid #e7e7e7;
-  margin-top: 38px;
-}
-
-.form-extra {
-  margin-bottom: 34px;
-  margin-top: 23px;
-}
-
-.form__button {
-  margin-bottom: 21px;
-}
-
-.form__text {
-  font-size: 14px;
-  line-height: 114%;
-  color: #000000;
 }

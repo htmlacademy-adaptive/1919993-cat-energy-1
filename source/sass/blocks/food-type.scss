@@ -4,14 +4,12 @@
   justify-content: space-between;
   min-height: 552px;
   margin-top: 20px;
-
 }
 
 .food-type__item {
   width: 280px;
   height: 266px;
   background: #f2f2f2;
-
 }
 
 .title-container {
@@ -20,12 +18,12 @@
 }
 
 .food-type__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $accent-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 154%;
   text-transform: uppercase;
-  color: #000;
+  color: #000000;
   margin-top: 30px;
 }
 
@@ -44,7 +42,7 @@
 .food-type__text {
   font-size: 14px;
   line-height: 129%;
-  color: #444;
+  color: #444444;
   width: 227px;
   margin-bottom: 23px;
   margin-top: 10px;
@@ -52,7 +50,7 @@
 }
 
 .food-type__link {
-  font-family: "Oswald", sans-serif;
+  font-family: $accent-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
@@ -60,7 +58,7 @@
   display: flex;
   align-items: center;
   padding-top: 18px;
-  color: #000;
+  color: #000000;
   text-decoration: none;
   border-top: 1px solid #d9d9d9;
   width: 240px;

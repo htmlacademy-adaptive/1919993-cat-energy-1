@@ -5,17 +5,17 @@
 }
 
 .example__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $accent-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 111%;
-  color: #000;
+  color: #000000;
 }
 
 .example__text {
   font-size: 14px;
   line-height: 129%;
-  color: #444;
+  color: #444444;
 }
 
 .example__info-list {
@@ -30,12 +30,12 @@
 }
 
 .example__info-title {
-  font-family: "Oswald", sans-serif;
+  font-family: $accent-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 100%;
   text-align: center;
-  color: #000;
+  color: #000000;
 }
 
 .example__info-text {
@@ -43,14 +43,14 @@
   line-height: 12px;
   display: flex;
   align-items: center;
-  color: #444;
+  color: #444444;
 }
 
 .example__cost-wrapper {
-  font-family: "Oswald", sans-serif;
+  font-family: $accent-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 143%;
   text-transform: uppercase;
-  color: #000;
+  color: #000000;
 }

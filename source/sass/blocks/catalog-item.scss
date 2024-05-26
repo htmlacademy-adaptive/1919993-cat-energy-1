@@ -1,0 +1,19 @@
+.catalog-item {
+  list-style-type: none;
+}
+
+.catalog-item__title {
+  font-family: $accent-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+
+.catalog-item__description {
+  font-size: 12px;
+  line-height: 133%;
+  color: #444444;
+}

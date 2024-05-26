@@ -3,24 +3,6 @@
   padding-bottom: 40px;
 }
 
-.logo__text {
-  margin-top: 40px;
-}
-
-.social-list {
-  display: flex;
-  padding: 0;
-  width: 132px;
-  justify-content: space-between;
-  padding: 20px 74px 20px;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
-}
-
-.social-list__item {
-  list-style-type: none;
-}
-
 .main-footer__htmlacademy {
   text-decoration: none;
   display: flex;
@@ -32,9 +14,5 @@
 .main-footer__htmlacademy-text {
   font-size: 16px;
   line-height: 125%;
-  color: #444;
-}
-
-.address__container--grey{
-  background-color: #f2f2f2;
+  color: #444444;
 }

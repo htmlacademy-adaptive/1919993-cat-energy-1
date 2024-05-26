@@ -1,0 +1,14 @@
+.description-list {
+  width: 140px;
+  height: 48px;
+}
+
+.description-list__value {
+  margin: 0;
+}
+
+.description-list__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
