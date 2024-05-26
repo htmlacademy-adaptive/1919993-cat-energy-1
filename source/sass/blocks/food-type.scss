@@ -1,3 +1,5 @@
+@use "../variables.scss" as variables;
+
 .food-type {
   display: flex;
   flex-direction: column;
@@ -12,13 +14,9 @@
   background: #f2f2f2;
 }
 
-.title-container {
-  display: flex;
-  align-items: center;
-}
-
 .food-type__title {
-  font-family: $accent-font;
+  font-family: variables.$accent-font;
+
   font-weight: 400;
   font-size: 24px;
   line-height: 154%;
@@ -50,7 +48,7 @@
 }
 
 .food-type__link {
-  font-family: $accent-font;
+  font-family: variables.$accent-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
@@ -63,9 +61,9 @@
   border-top: 1px solid #d9d9d9;
   width: 240px;
   margin-left: 20px;
-}
 
-.food-type__link::after {
-  content: url("../img/icon-arrow.svg");
-  margin-left: 15px;
+  &::after {
+    content: url("../img/icon-arrow.svg");
+    margin-left: 15px;
+  }
 }

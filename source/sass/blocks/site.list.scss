@@ -1,5 +1,7 @@
+@use "../variables.scss" as variables;
+
 .site-list {
-  font-family: $accent-font;
+  font-family: variables.$accent-font;
   font-weight: 400;
   font-size: 20px;
   text-transform: uppercase;

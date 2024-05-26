@@ -1,5 +1,7 @@
+@use "../variables.scss" as variables;
+
 .additional__title {
-  font-family: $accent-font;
+  font-family: variables.$accent-font;
   font-weight: 400;
   font-size: 24px;
   color: #000000;

@@ -1,9 +1,11 @@
+@use "../variables.scss" as variables;
+
 .how-it-works {
   margin-bottom: 49px;
 }
 
 .how-it-works__title {
-  font-family: $accent-font;
+  font-family: variables.$accent-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 111%;

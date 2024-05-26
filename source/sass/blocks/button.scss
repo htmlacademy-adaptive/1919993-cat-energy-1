@@ -1,5 +1,7 @@
+@use "../variables.scss" as variables;
+
 .button {
-  font-family: $accent-font;
+  font-family: variables.$accent-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
