@@ -1,7 +1,9 @@
+@use "variables.scss" as variables;
+
 body {
   margin: 0;
   min-width: 320px;
-  font-family: $main-font;
+  font-family: variables.$main-font;
   font-weight: 400;
 }
 
