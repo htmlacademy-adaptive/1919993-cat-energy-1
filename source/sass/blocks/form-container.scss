@@ -1,0 +1,22 @@
+@use "../variables.scss" as variables;
+
+.form-container__title {
+  font-family: variables.$accent-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  color: #000000;
+  margin-top: 27px;
+  margin-bottom: 0;
+}
+
+.form-container__text {
+  font-family: variables.$accent-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 39px;
+  margin-top: 32px;
+}

@@ -5,6 +5,12 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 
+import bemlinter from "gulp-html-bemlinter"
+
+export function lintBemMarkup () {
+  return gulp.src("source/**/*.html").pipe(bemlinter())
+}
+
 // Styles
 
 export const styles = () => {

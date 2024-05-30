@@ -1,0 +1,15 @@
+@use "../variables.scss" as variables;
+
+.site-list {
+  font-family: variables.$accent-font;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  list-style-type: none;
+}
+
+.site-list__navigation {
+  text-decoration: none;
+  color: #000000;
+}

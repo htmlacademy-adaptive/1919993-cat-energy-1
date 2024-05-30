@@ -1,0 +1,19 @@
+@use "variables.scss" as variables;
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: variables.$main-font;
+  font-weight: 400;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

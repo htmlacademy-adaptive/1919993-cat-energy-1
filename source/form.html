@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -39,85 +40,85 @@
 
       <fieldset class="fieldset-container form-info">
         <legend class="visually-hidden">Контактные данные (владельца кота)</legend>
-        <label class="label-info">
-          <span class="label-info__text">имя:*</span>
-          <input class="label-info__input" type="text" name="name" placeholder="Барсик" required>
+        <label class="label-info label">
+          <span class="label-info__text label__text">имя:*</span>
+          <input class="label-info__input label__text" type="text" name="name" placeholder="Барсик" required>
         </label>
-        <label class="label-info">
-          <span class="label-info__text">Вес (кг):*</span>
-          <input class="label-info__input" type="text" name="weight" placeholder="7" required>
+        <label class="label-info label">
+          <span class="label-info__text label__text">Вес (кг):*</span>
+          <input class="label-info__input label__text" type="text" name="weight" placeholder="7" required>
         </label>
-        <label class="label-info">
-          <span class="label-info__text">Возраст (лет):*</span>
-          <input class="label-info__input" type="text" name="age" placeholder="7" required>
+        <label class="label-info label">
+          <span class="label-info__text label__text">Возраст (лет):*</span>
+          <input class="label-info__input label__text" type="text" name="age" placeholder="7" required>
         </label>
       </fieldset>
 
       <fieldset class="fieldset-container form-type">
         <legend class="visually-hidden">тип корма</legend>
-        <label class="label-type">
+        <label class="label-type label">
           <input class="label-type__input" type="radio" name="type" value="lose-weight" checked>
-          <span class="label-type__text">похудение</span>
+          <span class="label-type__text label__text">похудение</span>
         </label>
-        <label class="label-type">
+        <label class="label-type label">
           <input class="label-type__input" type="radio" name="type" value="gain-weight">
-          <span class="label-type__text">Набор массы</span>
+          <span class="label-type__text label__text">Набор массы</span>
         </label>
-        <label class="label-type">
+        <label class="label-type label">
           <input class="label-type__input" type="radio" name="type" value="advice">
-          <span class="label-type__text">Не знаю (Нужен ваш совет)</span>
+          <span class="label-type__text label__text">Не знаю (Нужен ваш совет)</span>
         </label>
       </fieldset>
 
       <fieldset class="fieldset-container form-feed">
-        <legend class="form-feed__title"> Контактные данные (владельца кота)</legend>
-        <label class="label-feed">
-          <span class="label-feed__text">E-mail:*</span>
-          <input class="label-feed__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+        <legend class="form-feed__title form-title"> Контактные данные (владельца кота)</legend>
+        <label class="label-feed label">
+          <span class="label-feed__text label__text">E-mail:*</span>
+          <input class="label-feed__input label-feed__email label__text" type="email" name="email" placeholder="kuklachev@gmail.com" required>
         </label>
-        <label class="label-feed">
-          <span class="label-feed__text">телефон:*</span>
-          <input class="label-feed__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+        <label class="label-feed label">
+          <span class="label-feed__text label__text">телефон:*</span>
+          <input class="label-feed__input label-feed__tel label__text" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
         </label>
       </fieldset>
 
       <fieldset class="fieldset-container form-feedback">
-        <legend class="form-feedback__title"> Комментарий</legend>
-        <label class="form-feedback__label">
-          <textarea class="form-feedback__input" name="comment"
+        <legend class="form-feedback__title form-title"> Комментарий</legend>
+        <label class="form-feedback__label label">
+          <textarea class="form-feedback__input label__text" name="comment"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </label>
       </fieldset>
 
       <fieldset class="fieldset-container form-extra">
-        <legend class="form-extra__title">Дополнительно</legend>
-        <label class="label-extra">
+        <legend class="form-extra__title form-title">Дополнительно</legend>
+        <label class="label-extra label">
           <input class="label-extra__input" type="checkbox" name="checkbox" value="sweetener" checked>
-          <span class="label-extra__text">сахарозаменитель</span>
+          <span class="label-extra__text label__text">сахарозаменитель</span>
         </label>
-        <label class="label-extra">
+        <label class="label-extra label">
           <input class="label-extra__input" type="checkbox" name="checkbox" value="water">
-          <span class="label-extra__text">питьевая вода</span>
+          <span class="label-extra__text label__text">питьевая вода</span>
         </label>
-        <label class="label-extra">
+        <label class="label-extra label">
           <input class="label-extra__input" type="checkbox" name="checkbox" value="milk">
-          <span class="label-extra__text">молоко</span>
+          <span class="label-extra__text label__text">молоко</span>
         </label>
-        <label class="label-extra">
+        <label class="label-extra label">
           <input class="label-extra__input" type="checkbox" name="checkbox" value="vitamins">
-          <span class="label-extra__text">витамины</span>
+          <span class="label-extra__text label__text">витамины</span>
         </label>
-        <button class="form__button button" type="submit">отправить заявку</button>
-        <span class="form__text">* — Обязательные поля</span>
       </fieldset>
+      <button class="form__button button" type="submit">отправить заявку</button>
+        <span class="form__text">* — Обязательные поля</span>
     </form>
   </main>
 
   <footer class="main-footer">
-    <section class="adress">
-      <div class="adress__container adress__container--grey">
-        <h2 class="adress__text">Приглашаем к сотрудничеству дилеров! </h2>
-        <address class="adress__info"><a class="adress__link" href="#">ул. Большая Конюшенная, д. 19/8</a></address>
+    <section class="address">
+      <div class="address__container address__container--grey">
+        <h2 class="address__text">Приглашаем к сотрудничеству дилеров! </h2>
+        <address class="address__info"><a class="address__link" href="#">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</a></address>
       </div>
     </section>
     <a class="main-footer__logo logo">
@@ -146,3 +147,5 @@
     </a>
   </footer>
 </body>
+
+</html>

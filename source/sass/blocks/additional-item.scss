@@ -1,0 +1,25 @@
+@use "../variables.scss" as variables;
+
+.additional-item {
+  list-style-type: none;
+}
+
+.additional-item__title {
+  font-family: variables.$accent-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.additional-item__container-text {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+  color: #444444;
+  width: 280px;
+  justify-content: space-between;
+}
