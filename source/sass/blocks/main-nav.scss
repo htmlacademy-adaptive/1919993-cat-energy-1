@@ -1,0 +1,25 @@
+@use "../variables.scss" as variables;
+
+.main-nav {
+  width: 100%;
+  position: relative;
+  outline: 1px solid red;
+
+  @media (min-width: variables.$tablet-width) {
+    width: auto;
+  }
+}
+
+
+.main-nav__toggle {
+  width: 18px;
+  height: 18px;
+  background-color: aqua;
+  position: absolute;
+  right: 50px;
+  top: -30px;
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+}

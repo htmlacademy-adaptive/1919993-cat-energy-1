@@ -1,3 +1,14 @@
+@use "../variables.scss" as variables;
+
+.logo {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: variables.$tablet-width) {
+    justify-content: left;
+  }
+}
+
 .logo__text {
   margin-top: 40px;
 }

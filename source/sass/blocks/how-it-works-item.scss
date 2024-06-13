@@ -1,6 +1,31 @@
+@use "../variables.scss" as variables;
+
+
 .how-it-works-item {
   display: flex;
   align-items: center;
+
+  @media (min-width: variables.$tablet-width) {
+    min-height: 280px;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 230px;
+    counter-increment: how-it-works-item;
+    position: relative;
+
+    &::after {
+      content: counter(how-it-works-item);
+      font-family: variables.$accent-font;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 100%;
+      color: #f2f2f2;
+      position: absolute;
+      z-index: -1;
+      top: -38px;
+      right: 0;
+    }
+  }
 }
 
 
@@ -10,4 +35,11 @@
   font-size: 14px;
   line-height: 129%;
   color: #444444;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-left: 0;
+    margin-top: 31px;
+  }
 }

@@ -12,6 +12,45 @@
     background-repeat: no-repeat;
     top: 0;
     z-index: -1;
+
+    @media (min-width: variables.$tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      min-width: 720px;
+      min-height: 694px;
+      display: flex;
+      background-size: cover;
+      right: 0;
+      top: -70px;
+    }
+  }
+
+  @media (min-width: variables.$mobile-width) {
+    height: 480px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    height: 875px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    height: 580px;
+  }
+}
+
+.hero__image {
+  @media (min-width: variables.$mobile-width) {
+    height: 270px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    height: 609px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    height: 499px;
   }
 }
 
@@ -23,7 +62,7 @@
   line-height: 100%;
   color: #ffffff;
   margin-bottom: 25px;
-  margin-top: 27px;
+  margin-top: 0;
 }
 
 .hero__text {

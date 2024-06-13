@@ -7,6 +7,12 @@
   text-transform: uppercase;
   color: #000000;
   list-style-type: none;
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
 }
 
 .site-list__navigation {
