@@ -3,12 +3,9 @@
 .logo {
   display: flex;
   justify-content: center;
+  align-items: center;
 
   @media (min-width: variables.$tablet-width) {
     justify-content: left;
   }
-}
-
-.logo__text {
-  margin-top: 40px;
 }

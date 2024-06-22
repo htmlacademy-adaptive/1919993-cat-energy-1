@@ -6,11 +6,13 @@
   &::before {
     content: "";
     position: absolute;
-    min-width: 320px;
     min-height: 302px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/hero-background-image.png");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/hero-background-image.png);
     background-repeat: no-repeat;
+    background-position: center;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: -1;
 
     @media (min-width: variables.$tablet-width) {
@@ -18,39 +20,40 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-      min-width: 720px;
-      min-height: 694px;
-      display: flex;
+      display: block;
       background-size: cover;
+      background-position: left;
+      left: 50%;
       right: 0;
       top: -70px;
+      bottom: 0;
     }
   }
 
   @media (min-width: variables.$mobile-width) {
-    height: 480px;
+    min-height: 480px;
   }
 
   @media (min-width: variables.$tablet-width) {
-    height: 875px;
+    min-height: 875px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    height: 580px;
+    min-height: 580px;
   }
 }
 
 .hero__image {
   @media (min-width: variables.$mobile-width) {
-    height: 270px;
+    min-height: 270px;
   }
 
   @media (min-width: variables.$tablet-width) {
-    height: 609px;
+    min-height: 609px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    height: 499px;
+    min-height: 499px;
   }
 }
 
@@ -63,6 +66,11 @@
   color: #ffffff;
   margin-bottom: 25px;
   margin-top: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 60px;
+    color: #000000;
+  }
 }
 
 .hero__text {
@@ -72,4 +80,9 @@
   line-height: 100%;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 20px;
+    color: #000000;
+  }
 }

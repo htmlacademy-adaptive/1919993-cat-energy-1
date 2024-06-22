@@ -13,9 +13,17 @@
     flex-wrap: wrap;
     gap: 15px;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 33px;
+  }
 }
 
 .site-list__navigation {
   text-decoration: none;
   color: #000000;
+
+  @media (min-width: variables.$desktop-width) {
+    color: #ffffff;
+  }
 }
