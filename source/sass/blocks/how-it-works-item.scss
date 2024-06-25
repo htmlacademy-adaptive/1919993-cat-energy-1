@@ -4,11 +4,14 @@
 .how-it-works-item {
   display: flex;
   align-items: center;
+  gap: 20px;
   position: relative;
+  font-size: 14px;
+  line-height: 129%;
+  color: #444444;
 
   &::before {
     content: "";
-    display: flex;
     width: 60px;
     height: 60px;
     background-repeat: no-repeat;
@@ -19,22 +22,24 @@
     @media (min-width: variables.$tablet-width) {
       height: 80px;
       width: 80px;
+      margin-top: 130px;
+      padding: 0;
     }
   }
 
-  &--1::before {
+  &--leaf::before {
     background-image: url("../img/functional-icon.svg");
   }
 
-  &--2::before {
+  &--powder::before {
     background-image: url("../img/powder-icon.svg");
   }
 
-  &--3::before {
+  &--bowl::before {
     background-image: url("../img/feed-icon.svg");
   }
 
-  &--4::before {
+  &--time::before {
     background-image: url("../img/time-icon.svg");
   }
 
@@ -57,21 +62,5 @@
       top: -38px;
       right: 0;
     }
-  }
-}
-
-
-.how-it-works-item__text {
-  width: 200px;
-  font-size: 14px;
-  line-height: 129%;
-  color: #444444;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 80px;
-
-  @media (min-width: variables.$tablet-width) {
-    margin-top: 130px;
-    padding: 0;
   }
 }
