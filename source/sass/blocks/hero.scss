@@ -36,10 +36,29 @@
 
   @media (min-width: variables.$tablet-width) {
     min-height: 875px;
+
+    .hero__container {
+      display: grid;
+    }
+
+    .hero__image {
+      order: 2;
+    }
   }
 
   @media (min-width: variables.$desktop-width) {
     min-height: 580px;
+
+    .hero__container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "title image" "description image" "button image";
+      grid-template-rows: min-content min-content 1fr;
+    }
+
+    .hero__image {
+      grid-area: image;
+      margin-left: -130px;
+    }
   }
 }
 

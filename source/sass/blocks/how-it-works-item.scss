@@ -4,6 +4,39 @@
 .how-it-works-item {
   display: flex;
   align-items: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: flex;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+
+    @media (min-width: variables.$tablet-width) {
+      height: 80px;
+      width: 80px;
+    }
+  }
+
+  &--1::before {
+    background-image: url("../img/functional-icon.svg");
+  }
+
+  &--2::before {
+    background-image: url("../img/powder-icon.svg");
+  }
+
+  &--3::before {
+    background-image: url("../img/feed-icon.svg");
+  }
+
+  &--4::before {
+    background-image: url("../img/time-icon.svg");
+  }
 
   @media (min-width: variables.$tablet-width) {
     min-height: 280px;
@@ -11,7 +44,6 @@
     align-items: flex-start;
     min-width: 230px;
     counter-increment: how-it-works-item;
-    position: relative;
 
     &::after {
       content: counter(how-it-works-item);
@@ -31,15 +63,15 @@
 
 .how-it-works-item__text {
   width: 200px;
-  margin-left: 20px;
   font-size: 14px;
   line-height: 129%;
   color: #444444;
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 80px;
 
   @media (min-width: variables.$tablet-width) {
-    margin-left: 0;
-    margin-top: 31px;
+    margin-top: 130px;
+    padding: 0;
   }
 }
