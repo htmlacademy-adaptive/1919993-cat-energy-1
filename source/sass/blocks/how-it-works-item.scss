@@ -8,6 +8,7 @@
   font-size: 14px;
   line-height: 129%;
   color: #444444;
+  position: relative;
 
   &::before {
     content: "";
@@ -20,7 +21,6 @@
     @media (min-width: variables.$tablet-width) {
       height: 80px;
       width: 80px;
-      margin-top: 130px;
       padding: 0;
     }
   }

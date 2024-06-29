@@ -1,7 +1,18 @@
+@use "../variables.scss" as variables;
+
 .promo {
   width: 280px;
   height: 290px;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/promo-background-image.png");
+  background-repeat: no-repeat;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: variables.$desktop-width){
+    width: 245px;
+  }
 }
 
 .promo__text {

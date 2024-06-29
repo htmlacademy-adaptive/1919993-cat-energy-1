@@ -20,10 +20,15 @@
 
 .main-footer__container {
   background-color: #f2f2f2;
+  width: 100%;
   padding-bottom: 40px;
+}
 
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
   @media (min-width: variables.$tablet-width) {
-    display: flex;
     justify-content: space-between;
-  }
+    flex-direction: row;
+}
 }

@@ -2,6 +2,10 @@
 
 .catalog-item {
   list-style-type: none;
+
+  @media (min-width: variables.$tablet-width) {
+    background: linear-gradient(#ffffff 81px, #f2f2f2 81px, #f2f2f2 100%);
+  }
 }
 
 .catalog-item__title {
@@ -11,6 +15,8 @@
   line-height: 125%;
   text-transform: uppercase;
   color: #222222;
+  width: 80px;
+  margin-top: 0;
 }
 
 
@@ -18,4 +24,28 @@
   font-size: 12px;
   line-height: 133%;
   color: #444444;
+}
+
+.catalog-item__image {
+
+  @media (min-width: variables.$tablet-width) {
+    width: 168px;
+    height: 206px;
+    margin-bottom: 27px;
+
+    &--small {
+      width: 161px;
+      height: 172px;
+      margin-bottom: 60px;
+    }
+
+    &--more {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+.catalog-item__button {
+  width: 280px;
 }
