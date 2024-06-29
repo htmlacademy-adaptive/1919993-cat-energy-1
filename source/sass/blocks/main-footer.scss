@@ -27,8 +27,9 @@
 .main-footer__wrapper {
   display: flex;
   flex-direction: column;
+
   @media (min-width: variables.$tablet-width) {
     justify-content: space-between;
     flex-direction: row;
-}
+  }
 }
