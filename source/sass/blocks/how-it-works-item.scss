@@ -1,13 +1,64 @@
+@use "../variables.scss" as variables;
+
+
 .how-it-works-item {
   display: flex;
   align-items: center;
-}
-
-
-.how-it-works-item__text {
-  width: 200px;
-  margin-left: 20px;
+  gap: 20px;
   font-size: 14px;
   line-height: 129%;
   color: #444444;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex-shrink: 0;
+
+    @media (min-width: variables.$tablet-width) {
+      height: 80px;
+      width: 80px;
+      padding: 0;
+    }
+  }
+
+  &--leaf::before {
+    background-image: url("../img/functional-icon.svg");
+  }
+
+  &--powder::before {
+    background-image: url("../img/powder-icon.svg");
+  }
+
+  &--bowl::before {
+    background-image: url("../img/feed-icon.svg");
+  }
+
+  &--time::before {
+    background-image: url("../img/time-icon.svg");
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    min-height: 280px;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 250px;
+    counter-increment: how-it-works-item;
+
+    &::after {
+      content: counter(how-it-works-item);
+      font-family: variables.$accent-font;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 100%;
+      color: #f2f2f2;
+      position: absolute;
+      z-index: -1;
+      top: -38px;
+      right: 0;
+    }
+  }
 }

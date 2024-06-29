@@ -10,4 +10,8 @@
   font-size: 36px;
   line-height: 111%;
   color: #000000;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 72px;
+  }
 }

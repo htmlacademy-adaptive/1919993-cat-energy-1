@@ -6,12 +6,73 @@
   &::before {
     content: "";
     position: absolute;
-    min-width: 320px;
     min-height: 302px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/hero-background-image.png");
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/hero-background-image.png");
     background-repeat: no-repeat;
+    background-position: center;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: -1;
+
+    @media (min-width: variables.$tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      display: block;
+      background-size: cover;
+      background-position: left;
+      left: 50%;
+      right: 0;
+      top: -70px;
+      bottom: 0;
+    }
+  }
+
+  @media (min-width: variables.$mobile-width) {
+    min-height: 480px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    min-height: 875px;
+
+    .hero__container {
+      display: grid;
+    }
+
+    .hero__image {
+      order: 2;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    min-height: 580px;
+
+    .hero__container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "title image" "description image" "button image";
+      grid-template-rows: min-content min-content 1fr;
+    }
+
+    .hero__image {
+      grid-area: image;
+      margin-left: -130px;
+    }
+  }
+}
+
+.hero__image {
+  @media (min-width: variables.$mobile-width) {
+    min-height: 270px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    min-height: 609px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    min-height: 499px;
   }
 }
 
@@ -23,7 +84,12 @@
   line-height: 100%;
   color: #ffffff;
   margin-bottom: 25px;
-  margin-top: 27px;
+  margin-top: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 60px;
+    color: #000000;
+  }
 }
 
 .hero__text {
@@ -33,4 +99,9 @@
   line-height: 100%;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 20px;
+    color: #000000;
+  }
 }

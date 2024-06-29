@@ -7,9 +7,28 @@
   text-transform: uppercase;
   color: #000000;
   list-style-type: none;
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 33px;
+    justify-content: flex-end;
+  }
 }
 
 .site-list__navigation {
   text-decoration: none;
   color: #000000;
+
+  @media (min-width: variables.$desktop-width) {
+    color: #ffffff;
+  }
+
+  &--black {
+    color: #000000;
+  }
 }
