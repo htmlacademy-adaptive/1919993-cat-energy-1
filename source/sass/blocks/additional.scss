@@ -3,6 +3,7 @@
 .additional__container {
   @media (min-width: variables.$desktop-width) {
     display: flex;
+    gap: 80px;
   }
 }
 
@@ -14,14 +15,5 @@
 }
 
 .additional__list {
-  width: 280px;
   padding: 0;
-
-  @media (min-width: variables.$tablet-width) {
-    width: 708px;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    width: 896px;
-  }
 }

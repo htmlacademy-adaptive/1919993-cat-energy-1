@@ -13,14 +13,19 @@
 }
 
 .catalog__list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 30px;
   padding: 0;
 
   @media (min-width: variables.$tablet-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 63px;
+    column-gap: 80px;
   }
 }

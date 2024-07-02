@@ -32,4 +32,9 @@
 
 .additional-item__button {
   width: 100%;
+
+  @media (min-width: variables.$desktop-width) {
+    width: 244px;
+    margin-left: 40px;
+  }
 }

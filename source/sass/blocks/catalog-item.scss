@@ -2,9 +2,16 @@
 
 .catalog-item {
   list-style-type: none;
+  min-width: 280px;
 
   @media (min-width: variables.$tablet-width) {
     background: linear-gradient(#ffffff 81px, #f2f2f2 81px, #f2f2f2 100%);
+    min-height: 511px;
+    min-width: 324px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    min-width: 245px;
   }
 }
 
@@ -47,4 +54,12 @@
 
 .catalog-item__button {
   width: 280px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 250px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 169px;
+  }
 }

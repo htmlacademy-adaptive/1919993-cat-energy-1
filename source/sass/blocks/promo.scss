@@ -5,13 +5,38 @@
   height: 290px;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/promo-background-image.png");
   background-repeat: no-repeat;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("../img/icon_gift.svg");
+    width: 78px;
+    height: 80px;
+    position: absolute;
+    top: 59px;
+    left: 101px;
+
+    @media (min-width: variables.$tablet-width) {
+      width: 80px;
+      height: 83px;
+      top: 57px;
+      left: 78px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      top: 56px;
+      left: 83px;
+    }
+  }
 
   @media (min-width: variables.$tablet-width) {
     width: 100%;
+    height: 200px;
   }
 
   @media (min-width: variables.$desktop-width) {
     width: 245px;
+    height: 290px;
   }
 }
 
@@ -20,4 +45,13 @@
   line-height: 125%;
   text-align: center;
   color: #ffffff;
+  padding-top: 187px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 71px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-top: 185px;
+  }
 }
