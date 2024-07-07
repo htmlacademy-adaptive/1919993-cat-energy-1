@@ -22,7 +22,7 @@
 
 .site-list__navigation {
   text-decoration: none;
-  color: #000000;
+  color: inherit;
 
   @media (min-width: variables.$desktop-width) {
     color: #ffffff;
