@@ -24,3 +24,11 @@
     justify-content: space-between;
   }
 }
+
+.main-header__container {
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
