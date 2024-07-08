@@ -17,6 +17,12 @@
   @media (min-width: variables.$desktop-width) {
     gap: 33px;
     justify-content: flex-end;
+    
+    color: #ffffff;
+    
+    &--inner-page {
+      color: #000000;
+    }
   }
 }
 
