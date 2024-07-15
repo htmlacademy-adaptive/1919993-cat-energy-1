@@ -2,6 +2,15 @@
 
 .form__button {
   margin-bottom: 21px;
+  width: 280px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 284px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 570px;
+  }
 }
 
 .form__text {
