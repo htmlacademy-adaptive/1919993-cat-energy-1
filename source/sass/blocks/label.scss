@@ -14,3 +14,17 @@
   color: #444444;
   min-width: fit-content;
 }
+
+.label__input {
+  font-family: variables.$accent-font;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #444444;
+  border: 1px solid #cdcdcd;
+  width: 100%;
+  box-sizing: border-box;
+  height: 45px;
+  margin-left: 13px;
+  padding-left: 15px;
+}

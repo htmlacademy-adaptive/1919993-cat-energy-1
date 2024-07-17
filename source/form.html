@@ -49,17 +49,17 @@
         <div class="form__wrapper">
           <section class="fieldset-container form-info">
             <h2 class="visually-hidden">Контактные данные (владельца кота)</h2>
-            <label class="label-info label">
-              <span class="label-info__text label__text">имя:*</span>
-              <input class="label-info__input label__text" type="text" name="name" placeholder="Барсик" required>
+            <label class="label">
+              <span class="label__text">имя:*</span>
+              <input class="label__input" type="text" name="name" placeholder="Барсик" required>
             </label>
-            <label class="label-info label">
-              <span class="label-info__text label__text">Вес (кг):*</span>
-              <input class="label-info__input label__text" type="text" name="weight" placeholder="7" required>
+            <label class="label">
+              <span class="label__text">Вес (кг):*</span>
+              <input class="label__input" type="text" name="weight" placeholder="7" required>
             </label>
-            <label class="label-info label">
-              <span class="label-info__text label__text">Возраст (лет):*</span>
-              <input class="label-info__input label__text" type="text" name="age" placeholder="7" required>
+            <label class="label">
+              <span class="label__text">Возраст (лет):*</span>
+              <input class="label__input" type="text" name="age" placeholder="7" required>
             </label>
           </section>
 
@@ -85,47 +85,47 @@
         <section class="fieldset-container form-feed">
           <h2 class="form-feed__title form-title"> Контактные данные (владельца кота)</h2>
           <div class="form-feed__container">
-          <label class="label-feed label">
-            <span class="label-feed__text label__text">E-mail:*</span>
-            <input class="label-feed__input label-feed__email label__text" type="email" name="email"
-              placeholder="kuklachev@gmail.com" required>
-          </label>
-          <label class="label-feed label">
-            <span class="label-feed__text label__text">телефон:*</span>
-            <input class="label-feed__input label-feed__tel label__text" type="tel" name="phone"
-              placeholder="8 (960) 900-60-90" required>
-          </label>
-        </div>
+            <label class="label-feed label">
+              <span class="label-feed__text label__text">E-mail:*</span>
+              <input class="label-feed__input label-feed__email label__text" type="email" name="email"
+                placeholder="kuklachev@gmail.com" required>
+            </label>
+            <label class="label-feed label">
+              <span class="label-feed__text label__text">телефон:*</span>
+              <input class="label-feed__input label-feed__tel label__text" type="tel" name="phone"
+                placeholder="8 (960) 900-60-90" required>
+            </label>
+          </div>
         </section>
 
         <section class="fieldset-container form-feedback">
           <h2 class="form-feedback__title form-title"> Комментарий</h2>
           <label class="form-feedback__label label">
-            <textarea class="form-feedback__input label__text" name="comment"
-              placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="form-feedback__input label__input" name="comment"
+              placeholder="Расскажите обо всех повадках кота" aria-label="Комментарий"></textarea>
           </label>
         </section>
 
         <section class="fieldset-container form-extra">
           <h2 class="form-extra__title form-title">Дополнительно</h2>
           <div class="form-extra__container">
-          <label class="label-extra label">
-            <input class="label-extra__input" type="checkbox" name="checkbox" value="sweetener" checked>
-            <span class="label-extra__text label__text">сахарозаменитель</span>
-          </label>
-          <label class="label-extra label">
-            <input class="label-extra__input" type="checkbox" name="checkbox" value="water">
-            <span class="label-extra__text label__text">питьевая вода</span>
-          </label>
-          <label class="label-extra label">
-            <input class="label-extra__input" type="checkbox" name="checkbox" value="milk">
-            <span class="label-extra__text label__text">молоко</span>
-          </label>
-          <label class="label-extra label">
-            <input class="label-extra__input" type="checkbox" name="checkbox" value="vitamins">
-            <span class="label-extra__text label__text">витамины</span>
-          </label>
-        </div>
+            <label class="label-extra label">
+              <input class="label-extra__input" type="checkbox" name="checkbox" value="sweetener" checked>
+              <span class="label-extra__text label__text">сахарозаменитель</span>
+            </label>
+            <label class="label-extra label">
+              <input class="label-extra__input" type="checkbox" name="checkbox" value="water">
+              <span class="label-extra__text label__text">питьевая вода</span>
+            </label>
+            <label class="label-extra label">
+              <input class="label-extra__input" type="checkbox" name="checkbox" value="milk">
+              <span class="label-extra__text label__text">молоко</span>
+            </label>
+            <label class="label-extra label">
+              <input class="label-extra__input" type="checkbox" name="checkbox" value="vitamins">
+              <span class="label-extra__text label__text">витамины</span>
+            </label>
+          </div>
         </section>
         <div class="form-total form-container fieldset-container">
           <button class="form__button button" type="submit">отправить заявку</button>
