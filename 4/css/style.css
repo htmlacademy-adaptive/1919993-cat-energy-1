@@ -811,6 +811,20 @@ body {
   min-width: fit-content;
 }
 
+.label__input {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #444444;
+  border: 1px solid #cdcdcd;
+  width: 100%;
+  box-sizing: border-box;
+  height: 45px;
+  margin-left: 13px;
+  padding-left: 15px;
+}
+
 .form-title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -891,28 +905,6 @@ body {
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
   }
-}
-
-.label-info {
-  width: 280px;
-}
-@media (min-width: 768px) {
-  .label-info {
-    width: 628px;
-  }
-}
-@media (min-width: 1440px) {
-  .label-info {
-    width: 570px;
-  }
-}
-
-.label-info__input {
-  border: 1px solid #cdcdcd;
-  width: 100%;
-  height: 45px;
-  margin-left: 13px;
-  padding-left: 15px;
 }
 
 .label-feed__input {
