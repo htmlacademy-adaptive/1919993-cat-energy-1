@@ -1,12 +1,5 @@
 @use "../variables.scss" as variables;
 
-.label-feed__input {
-  border: 1px solid #cdcdcd;
-  width: 202px;
-  height: 45px;
-  margin-left: 13px;
-  padding-left: 15px;
-}
 
 .label-feed__email {
   background-image: url("../img/form-email.svg");
@@ -14,11 +7,8 @@
   background-position: center right 14px;
 
   @media (min-width: variables.$tablet-width) {
-    width: 552px;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    width: 494px;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -28,10 +18,7 @@
   background-position: center right 14px;
 
   @media (min-width: variables.$tablet-width) {
-    width: 530px;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    width: 472px;
+    width: 100%;
+    box-sizing: border-box;
   }
 }

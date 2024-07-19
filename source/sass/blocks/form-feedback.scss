@@ -9,7 +9,8 @@
 
 .form-feedback__input {
   min-height: 150px;
-  width: 280px;
+  width: 100%;
+  box-sizing: border-box;
   border: 1px solid #e7e7e7;
   margin-top: 38px;
 
