@@ -435,7 +435,7 @@ body {
 }
 @media (min-width: 768px) {
   .address__container {
-    padding: 60px 70px;
+    padding: 60px 40px;
   }
 }
 @media (min-width: 1440px) {
@@ -907,14 +907,6 @@ body {
   }
 }
 
-.label-feed__input {
-  border: 1px solid #cdcdcd;
-  width: 202px;
-  height: 45px;
-  margin-left: 13px;
-  padding-left: 15px;
-}
-
 .label-feed__email {
   background-image: url("../img/form-email.svg");
   background-repeat: no-repeat;
@@ -922,12 +914,8 @@ body {
 }
 @media (min-width: 768px) {
   .label-feed__email {
-    width: 552px;
-  }
-}
-@media (min-width: 1440px) {
-  .label-feed__email {
-    width: 494px;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -938,12 +926,8 @@ body {
 }
 @media (min-width: 768px) {
   .label-feed__tel {
-    width: 530px;
-  }
-}
-@media (min-width: 1440px) {
-  .label-feed__tel {
-    width: 472px;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -960,7 +944,8 @@ body {
 
 .form-feedback__input {
   min-height: 150px;
-  width: 280px;
+  width: 100%;
+  box-sizing: border-box;
   border: 1px solid #e7e7e7;
   margin-top: 38px;
 }
@@ -985,7 +970,7 @@ body {
 @media (min-width: 1440px) {
   .form-feed__container {
     display: flex;
-    gap: 81px;
+    gap: 80px;
   }
 }
 
@@ -1004,11 +989,13 @@ body {
 @media (min-width: 768px) {
   .form-extra__container {
     grid-template-columns: 1fr 1fr;
+    gap: 60px;
   }
 }
 @media (min-width: 1440px) {
   .form-extra__container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
   }
 }
 
