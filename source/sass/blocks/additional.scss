@@ -1,8 +1,19 @@
 @use "../variables.scss" as variables;
 
+.additional__container {
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+    gap: 80px;
+  }
+}
+
 .additional__title {
   font-family: variables.$accent-font;
   font-weight: 400;
   font-size: 24px;
   color: #000000;
+}
+
+.additional__list {
+  padding: 0;
 }

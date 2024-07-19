@@ -1,7 +1,25 @@
+@use "../variables.scss" as variables;
+
+
 .form-extra {
   border: 0;
   display: flex;
   flex-direction: column;
   margin-bottom: 34px;
   margin-top: 23px;
+}
+
+.form-extra__container {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+  }
 }

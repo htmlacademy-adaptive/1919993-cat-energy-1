@@ -1,6 +1,15 @@
+@use "../variables.scss" as variables;
+
 .form-feed {
   border: 0;
   display: flex;
   flex-direction: column;
   margin-top: 26px;
+}
+
+.form-feed__container {
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+    gap: 80px;
+  }
 }

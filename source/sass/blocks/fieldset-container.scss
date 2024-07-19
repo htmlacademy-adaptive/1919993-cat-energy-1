@@ -1,0 +1,11 @@
+@use "../variables.scss" as variables;
+
+.fieldset-container {
+  @media (min-width: variables.$tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0;
+  }
+}

@@ -1,0 +1,12 @@
+@use "../variables.scss" as variables;
+
+.form-total {
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    gap: 60px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 80px;
+  }
+}

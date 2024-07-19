@@ -1,9 +1,31 @@
 @use "../variables.scss" as variables;
 
 .example {
-  background-color: #eaeaea;
+  background: #eaeaea;
   padding-bottom: 40px;
   padding-top: 25px;
+  width: 100%;
+
+  @media (min-width: variables.$tablet-width) {
+    background: linear-gradient(to bottom, #ffffff 619px, #eaeaea 619px, #eaeaea 462px);
+    min-height: 1080px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    background: linear-gradient(to bottom, #ffffff 136px, #eaeaea 136px, #eaeaea 462px);
+    min-height: 598px;
+
+    .example__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "title image" "description image" "button image";
+      grid-template-rows: min-content min-content 1fr;
+    }
+
+    .example-slider {
+      grid-area: image;
+    }
+  }
 }
 
 .example__title {

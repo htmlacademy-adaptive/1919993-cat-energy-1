@@ -2,6 +2,10 @@
 
 .additional-item {
   list-style-type: none;
+
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+  }
 }
 
 .additional-item__title {
@@ -11,6 +15,7 @@
   line-height: 100%;
   text-transform: uppercase;
   color: #222222;
+  width: 163px;
 }
 
 .additional-item__container-text {
@@ -22,4 +27,14 @@
   color: #444444;
   width: 280px;
   justify-content: space-between;
+}
+
+
+.additional-item__button {
+  width: 100%;
+
+  @media (min-width: variables.$desktop-width) {
+    width: 244px;
+    margin-left: 40px;
+  }
 }

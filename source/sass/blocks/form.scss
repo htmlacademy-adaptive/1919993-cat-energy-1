@@ -1,9 +1,28 @@
+@use "../variables.scss" as variables;
+
 .form__button {
   margin-bottom: 21px;
+  width: 280px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 284px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 570px;
+  }
 }
 
 .form__text {
   font-size: 14px;
   line-height: 114%;
   color: #000000;
+}
+
+.form__wrapper {
+  @media (min-width: variables.$desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
 }

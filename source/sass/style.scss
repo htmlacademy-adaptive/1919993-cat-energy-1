@@ -1,5 +1,6 @@
 // Начните писать стили здесь
 @use "./base.scss";
+@use "./container.scss";
 @use "./fonts.scss";
 @use "./variables.scss";
 @use "./blocks/main-header.scss";
@@ -22,7 +23,6 @@
 @use "./blocks/form-info.scss";
 @use "./blocks/form-type.scss";
 @use "./blocks/form.scss";
-@use "./blocks/label-info.scss";
 @use "./blocks/label-feed.scss";
 @use "./blocks/label-type.scss";
 @use "./blocks/form-feedback.scss";
@@ -35,3 +35,6 @@
 @use "./blocks/social-list.scss";
 @use "./blocks/site-list.scss";
 @use "./blocks/title-container.scss";
+@use "./blocks/main-nav.scss";
+@use "./blocks/fieldset-container.scss";
+@use "./blocks/form-total.scss";

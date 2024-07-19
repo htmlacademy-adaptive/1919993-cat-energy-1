@@ -4,37 +4,85 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 552px;
-  margin-top: 20px;
+  outline: 1px solid #2e1798;
+  gap: 20px;
+
+
+  @media (min-width: variables.$desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    gap: 30px;
+  }
 }
 
 .food-type__item {
-  width: 280px;
-  height: 266px;
-  background: #f2f2f2;
+  background-color: #f2f2f2;
+  padding: 20px 20px;
+
+  &--slim {
+    background-image: url("../img/cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: top 20px left 20px;
+
+    @media (min-width: variables.$tablet-width) {
+      background-position: top 85px left 460px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      background-position: top 41px left 50px;
+    }
+  }
+
+  &--pro {
+    background-image: url("../img/cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: top 24px left 13px;
+
+    @media (min-width: variables.$tablet-width) {
+      background-position: top 85px left 460px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      background-position: top 41px left 50px;
+    }
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 50px 52px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 55px 52px;
+  }
 }
 
 .food-type__title {
   font-family: variables.$accent-font;
-
   font-weight: 400;
   font-size: 24px;
   line-height: 154%;
   text-transform: uppercase;
   color: #000000;
-  margin-top: 30px;
-}
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 70px;
+  margin-bottom: 29px;
 
-.food-type__image--slim {
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-top: 5px;
-}
+  @media (min-width: variables.$tablet-width) {
+    padding-left: 0;
+    margin-bottom: 24px;
+  }
 
-.food-type__image--mass {
-  margin-right: 11px;
-  margin-left: 12px;
-  margin-top: 13px;
+  @media (min-width: variables.$desktop-width) {
+    line-height: 100%;
+    font-size: 36px;
+    padding-left: 160px;
+    margin-bottom: 72px;
+  }
 }
 
 .food-type__text {
@@ -43,8 +91,18 @@
   color: #444444;
   width: 227px;
   margin-bottom: 23px;
-  margin-top: 10px;
-  margin-left: 20px;
+  margin-top: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    line-height: 150%;
+    width: 300px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 420px;
+    margin-bottom: 27px;
+  }
 }
 
 .food-type__link {
@@ -60,10 +118,13 @@
   text-decoration: none;
   border-top: 1px solid #d9d9d9;
   width: 240px;
-  margin-left: 20px;
 
   &::after {
     content: url("../img/icon-arrow.svg");
-    margin-left: 15px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    border: 0;
+    padding: 0;
   }
 }
