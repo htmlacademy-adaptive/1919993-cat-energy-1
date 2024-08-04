@@ -2,10 +2,11 @@
 
 .logo {
   display: flex;
-  justify-content: center;
   align-items: center;
+  gap: 56px;
+  padding-top: 23px;
 
   @media (min-width: variables.$tablet-width) {
-    justify-content: left;
+    gap: 0;
   }
 }
