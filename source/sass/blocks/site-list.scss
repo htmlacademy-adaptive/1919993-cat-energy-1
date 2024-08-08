@@ -8,15 +8,13 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-  position: absolute;
-  z-index: 1;
-  width: 100%;
   background-color: #ffffff;
 
   @media (min-width: variables.$tablet-width) {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    background-color: transparent;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -41,4 +39,8 @@
   align-items: center;
   justify-content: center;
   min-height: 66px;
+
+  @media (min-width: variables.$tablet-width) {
+    border-top: none;
+  }
 }
