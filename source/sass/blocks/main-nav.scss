@@ -6,7 +6,6 @@
   z-index: 1;
   left: 0;
   top: 0;
-  padding-top: 20px;
 
   @media (min-width: variables.$tablet-width) {
     width: auto;
@@ -25,7 +24,7 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  transform: translateX(145px);
+  transform: translateX(115px);
   margin-bottom: 10px;
   display: block;
 

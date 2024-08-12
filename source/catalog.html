@@ -2,6 +2,10 @@
 <html lang="ru">
 
 <head>
+  <link rel="icon" href="favicon.ico?v=M44lzPylqQ">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
@@ -12,8 +16,12 @@
 
   <header class="main-header">
     <div class="main-header__container container">
-      <a class="main-header__logo logo">
-        <img class="logo__image" src="img/logo-image.svg" alt="Логотип Кэт энерджи" width="60" height="50">
+      <a class="main-header__logo logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-image-desktop.svg" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="img/logo-image-tablet.svg" width="60" height="50">
+          <img class="logo__image" src="img/logo-image.svg" alt="Логотип Кэт энерджи" width="33" height="38">
+        </picture>
         <img class="logo__text" src="img/logo-text.svg" alt="Кэт энерджи">
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -238,15 +246,19 @@
   <footer class="main-footer">
     <section class="address">
       <div class="container">
-      <div class="address__container">
-        <h2 class="address__text">Приглашаем
-          к сотрудничеству
-          дилеров!</h2>
-        <address class="address__info"><a class="address__link" href="#">ул. Большая Конюшенная, д. 19/8
-            Санкт-Петербург</a></address>
+        <div class="address__container address__container--grey">
+          <h2 class="address__text">Приглашаем
+            к сотрудничеству
+            дилеров!</h2>
+          <address class="address__info"><a class="address__link" href="#">ул. Большая Конюшенная, д. 19/8
+              Санкт-Петербург</a></address>
+        </div>
       </div>
-    </div>
-      <img class="address__map" src="img/address-image.png" alt="Карта" width="320" height="362">
+      <div class="address__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198427!2d30.320472477805833!3d59.93871916209316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sus!4v1722785769275!5m2!1sru!2sus"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </section>
     <section class="main-footer__container">
       <div class="main-footer__wrapper container">

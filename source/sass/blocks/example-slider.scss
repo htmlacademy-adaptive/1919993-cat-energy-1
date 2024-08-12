@@ -1,11 +1,9 @@
 @use "../variables.scss" as variables;
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 56px;
+.example-slider__image {
 
   @media (min-width: variables.$tablet-width) {
-    gap: 0;
+    width: 560px;
+    height: 512px;
   }
 }

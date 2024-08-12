@@ -15,11 +15,18 @@
     right: 0;
     z-index: -1;
 
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/hero-background-image@2x.png");
+      background-size: contain;
+
+    }
+
     @media (min-width: variables.$tablet-width) {
       display: none;
     }
 
     @media (min-width: variables.$desktop-width) {
+      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/hero-background-image-desktop.png");
       display: block;
       background-size: cover;
       background-position: left;
@@ -27,6 +34,10 @@
       right: 0;
       top: -70px;
       bottom: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/hero-background-image-desktop@2x.png");
+      }
     }
   }
 

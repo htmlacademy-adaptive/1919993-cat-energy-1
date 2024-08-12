@@ -50,6 +50,17 @@
       height: 60px;
     }
   }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 172px;
+    height: 196px;
+    margin-bottom: 27px;
+
+    &--more {
+      width: 60px;
+      height: 60px;
+    }
+  }
 }
 
 .catalog-item__button {

@@ -2,9 +2,9 @@
 <html lang="ru">
 
 <head>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="32x32">
+  <link rel="icon" href="favicon.ico?v=M44lzPylqQ">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" type="image/png" href="img/favicons/apple-icon.png" sizes="180x180">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,8 +16,12 @@
 
   <header class="main-header">
     <div class="main-header__container container">
-      <a class="main-header__logo logo" href="index.html">
-        <img class="logo__image" src="img/logo-image.svg" alt="Логотип Кэт энерджи" width="33" height="38">
+      <a class="main-header__logo logo">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-image-desktop.svg" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="img/logo-image-tablet.svg" width="60" height="50">
+          <img class="logo__image" src="img/logo-image.svg" alt="Логотип Кэт энерджи" width="33" height="38">
+        </picture>
         <img class="logo__text" src="img/logo-text.svg" alt="Кэт энерджи">
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
