@@ -1,7 +1,6 @@
 @use "../variables.scss" as variables;
 
 .example-slider__image {
-
   @media (min-width: variables.$tablet-width) {
     width: 560px;
     height: 512px;
