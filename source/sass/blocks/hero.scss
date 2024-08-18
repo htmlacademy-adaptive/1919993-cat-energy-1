@@ -7,7 +7,8 @@
     content: "";
     position: absolute;
     min-height: 302px;
-    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/hero-background-image.png");
+    background-image:linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../img/hero-background-image.png") 1x,
+        url("../img/hero-background-image@2x.png") 2x);
     background-repeat: no-repeat;
     background-position: center;
     top: 0;
@@ -15,17 +16,14 @@
     right: 0;
     z-index: -1;
 
-    @media (min-resolution: 2dppx) {
-      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/hero-background-image@2x.png");
-      background-size: contain;
-    }
 
     @media (min-width: variables.$tablet-width) {
       display: none;
     }
 
     @media (min-width: variables.$desktop-width) {
-      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/hero-background-image-desktop.png");
+      background-image:linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../img/hero-background-image-desktop.png") 1x,
+          url("../img/hero-background-image-desktop@2x.png") 2x);
       display: block;
       background-size: cover;
       background-position: left;
@@ -33,10 +31,6 @@
       right: 0;
       top: -70px;
       bottom: 0;
-
-      @media (min-resolution: 2dppx) {
-        background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/hero-background-image-desktop@2x.png");
-      }
     }
   }
 

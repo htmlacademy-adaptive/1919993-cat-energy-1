@@ -9,3 +9,10 @@
     gap: 0;
   }
 }
+
+.logo__text {
+  @media (min-width: variables.$desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
+}

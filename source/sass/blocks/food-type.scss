@@ -45,7 +45,7 @@
     background-image: url("../img/cat-pro.svg");
     background-repeat: no-repeat;
     background-position: top 24px left 13px;
-    background-size: 67px, 50px;
+    background-size: 67px 50px;
 
     @media (min-width: variables.$tablet-width) {
       background-image: url("../img/cat-pro-tablet.svg");

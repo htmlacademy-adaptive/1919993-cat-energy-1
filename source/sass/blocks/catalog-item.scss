@@ -35,13 +35,9 @@
 
 .catalog-item__image {
   @media (min-width: variables.$tablet-width) {
-    width: 168px;
-    height: 206px;
     margin-bottom: 27px;
 
     &--small {
-      width: 161px;
-      height: 172px;
       margin-bottom: 60px;
     }
 
@@ -52,14 +48,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 172px;
-    height: 196px;
     margin-bottom: 27px;
-
-    &--more {
-      width: 60px;
-      height: 60px;
-    }
   }
 }
 

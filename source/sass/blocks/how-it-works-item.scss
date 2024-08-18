@@ -27,18 +27,34 @@
 
   &--leaf::before {
     background-image: url("../img/functional-icon.svg");
+
+    @media (min-width: variables.$tablet-width) {
+      background-image: url("../img/functional-icon-tablet.svg");
+    }
   }
 
   &--powder::before {
     background-image: url("../img/powder-icon.svg");
+
+    @media (min-width: variables.$tablet-width) {
+      background-image: url("../img/powder-icon-tablet.svg");
+    }
   }
 
   &--bowl::before {
     background-image: url("../img/feed-icon.svg");
+
+    @media (min-width: variables.$tablet-width) {
+      background-image: url("../img/feed-icon-tablet.svg");
+    }
   }
 
   &--time::before {
     background-image: url("../img/time-icon.svg");
+
+    @media (min-width: variables.$tablet-width) {
+      background-image: url("../img/time-icon-tablet.svg");
+    }
   }
 
   @media (min-width: variables.$tablet-width) {
