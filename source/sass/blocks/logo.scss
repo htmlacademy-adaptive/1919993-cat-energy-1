@@ -2,10 +2,17 @@
 
 .logo {
   display: flex;
-  justify-content: center;
   align-items: center;
+  gap: 56px;
 
   @media (min-width: variables.$tablet-width) {
-    justify-content: left;
+    gap: 0;
+  }
+}
+
+.logo__text {
+  @media (min-width: variables.$desktop-width) {
+    width: 118px;
+    height: 21px;
   }
 }

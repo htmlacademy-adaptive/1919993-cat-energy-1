@@ -5,12 +5,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 26px 20px;
+  padding: 26px 0;
   background-color: #ffffff;
 
 
   &--grey {
     background-color: #f2f2f2;
+
+    @media (min-width: variables.$desktop-width) {
+      background-color: #ffffff;
+    }
   }
 
 
@@ -31,15 +35,22 @@
 
 .address__map {
   width: 100%;
-  min-height: 362px;
+  height: 362px;
 
   @media (min-width: variables.$tablet-width) {
-    min-height: 400px;
+    height: 400px;
   }
 
   @media (min-width: variables.$desktop-width) {
     position: relative;
   }
+}
+
+.address__map iframe {
+  border: 0;
+  display: block;
+  width: inherit;
+  height: inherit;
 }
 
 .address__text {

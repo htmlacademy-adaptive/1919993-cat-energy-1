@@ -5,6 +5,7 @@
   align-items: center;
   flex-wrap: wrap;
   outline: 1px solid #26c143;
+  position: relative;
 
   @media (min-width: variables.$tablet-width) {
     min-height: 50px;

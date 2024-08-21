@@ -27,12 +27,16 @@
     background-image: url("../img/cat-slim.svg");
     background-repeat: no-repeat;
     background-position: top 20px left 20px;
+    background-size: 50px, 53px;
 
     @media (min-width: variables.$tablet-width) {
+      background-image: url("../img/cat-slim-tablet.svg");
       background-position: top 85px left 460px;
+      background-size: auto;
     }
 
     @media (min-width: variables.$desktop-width) {
+      background-image: url("../img/cat-slim-desktop.svg");
       background-position: top 41px left 50px;
     }
   }
@@ -41,12 +45,16 @@
     background-image: url("../img/cat-pro.svg");
     background-repeat: no-repeat;
     background-position: top 24px left 13px;
+    background-size: 67px 50px;
 
     @media (min-width: variables.$tablet-width) {
-      background-position: top 85px left 460px;
+      background-image: url("../img/cat-pro-tablet.svg");
+      background-position: top 85px left 424px;
+      background-size: auto;
     }
 
     @media (min-width: variables.$desktop-width) {
+      background-image: url("../img/cat-pro-desktop.svg");
       background-position: top 41px left 50px;
     }
   }
