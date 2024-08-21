@@ -12,6 +12,7 @@
         url("../img/hero-background-image@2x.png") 2x);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     top: 0;
     left: 0;
     right: 0;
@@ -66,20 +67,6 @@
       grid-area: image;
       margin-left: -130px;
     }
-  }
-}
-
-.hero__image {
-  @media (min-width: variables.$mobile-width) {
-    min-height: 270px;
-  }
-
-  @media (min-width: variables.$tablet-width) {
-    min-height: 609px;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    min-height: 499px;
   }
 }
 
