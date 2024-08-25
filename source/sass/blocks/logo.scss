@@ -6,11 +6,18 @@
   gap: 56px;
 
   @media (min-width: variables.$tablet-width) {
-    gap: 0;
+    gap: 13px;
+    margin-top: 7px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 43px;
   }
 }
 
 .logo__text {
+  margin-bottom: 3px;
+
   @media (min-width: variables.$desktop-width) {
     width: 118px;
     height: 21px;

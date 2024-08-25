@@ -3,8 +3,6 @@
 .button {
   font-family: variables.$accent-font;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 125%;
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -12,7 +10,6 @@
   color: #ffffff;
   background-color: #68b738;
   border: none;
-  height: 40px;
   text-decoration: none;
 
   &--secondary {

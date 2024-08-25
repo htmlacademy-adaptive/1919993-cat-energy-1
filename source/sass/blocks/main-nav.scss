@@ -4,12 +4,19 @@
   width: 100%;
   position: absolute;
   z-index: 1;
-  left: 0;
+  right: 0;
   top: 0;
 
   @media (min-width: variables.$tablet-width) {
     width: auto;
-    position: static;
+    position: absolute;
+    right: 36px;
+    top: 20px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    right: 111px;
+    top: 59px;
   }
 }
 
@@ -24,8 +31,8 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  transform: translateX(115px);
-  margin-bottom: 10px;
+  transform: translateX(130px);
+  margin-top: 9px;
   display: block;
 
   @media (min-width: variables.$tablet-width) {
@@ -45,6 +52,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
+
   &::before,
   &::after {
     content: "";
@@ -68,4 +76,8 @@
 
 .main-nav--closed .site-list__item {
   display: none;
+
+  @media (min-width: variables.$tablet-width) {
+    display: block;
+  }
 }

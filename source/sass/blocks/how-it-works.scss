@@ -2,6 +2,16 @@
 
 .how-it-works {
   margin-bottom: 49px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-top: 41px;
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 71px;
+    margin-bottom: 4px;
+  }
 }
 
 .how-it-works__title {
@@ -10,8 +20,12 @@
   font-size: 36px;
   line-height: 111%;
   color: #000000;
+  margin-top: 22px;
+  margin-bottom: 40px;
 
   @media (min-width: variables.$tablet-width) {
-    margin-bottom: 72px;
+    margin-bottom: 71px;
+    font-size: 60px;
+    line-height: 101%;
   }
 }
