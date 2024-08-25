@@ -14,7 +14,7 @@
   }
 
   &__container {
-padding-bottom: 11px;
+    padding-bottom: 11px;
 
     @media (min-width: variables.$tablet-width) {
       display: flex;

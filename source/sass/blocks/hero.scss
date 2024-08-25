@@ -55,7 +55,7 @@
       position: absolute;
       top: 252px;
       left: 56px;
-      height: 609PX;
+      height: 609px;
       z-index: -1;
     }
   }
@@ -71,7 +71,7 @@
     }
 
     .hero__image {
-     position: static;
+      position: static;
       grid-area: image;
       margin-left: -166px;
       margin-top: -11px;
@@ -137,7 +137,7 @@
 .hero__button {
   height: 40px;
   font-size: 14px;
-line-height: 125%;
+  line-height: 125%;
 
   @media (min-width: variables.$tablet-width) {
     width: 244px;
@@ -151,4 +151,3 @@ line-height: 125%;
     margin-left: 80px;
   }
 }
-
