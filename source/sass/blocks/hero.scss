@@ -2,6 +2,7 @@
 
 .hero {
   position: relative;
+  margin-bottom: 34px;
 
   &::before {
     content: "";
@@ -45,6 +46,7 @@
 
   @media (min-width: variables.$tablet-width) {
     min-height: 875px;
+    margin-bottom: 0;
 
     .hero__container {
       display: grid;
@@ -136,7 +138,7 @@
 
 .hero__button {
   height: 40px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 125%;
 
   @media (min-width: variables.$tablet-width) {
@@ -150,4 +152,8 @@
   @media (min-width: variables.$desktop-width) {
     margin-left: 80px;
   }
+}
+
+.hero__button:hover{
+  background: #5eaa2f;
 }

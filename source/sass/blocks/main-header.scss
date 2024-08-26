@@ -5,12 +5,16 @@
   align-items: center;
   flex-wrap: wrap;
   position: relative;
-  margin-top: 12px;
+  margin-top: 18px;
 
   @media (min-width: variables.$tablet-width) {
     min-height: 50px;
     flex-wrap: nowrap;
     justify-content: space-between;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 12px;
   }
 
   &__container {
