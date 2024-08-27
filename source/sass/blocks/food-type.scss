@@ -7,15 +7,14 @@
   gap: 22px;
   margin-top: -14px;
 
+  @media (min-width: variables.$tablet-width) {
+    gap: 28px;
+  }
 
   @media (min-width: variables.$desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
-  }
-
-  @media (min-width: variables.$tablet-width) {
-    gap: 28px;
   }
 }
 
@@ -135,6 +134,7 @@
 
   &::after {
     content: url("../img/icon-arrow.svg");
+    width: 24px;
     margin-left: 16px;
 
     @media (min-width: variables.$tablet-width) {
@@ -147,4 +147,13 @@
     padding: 0;
     font-size: 20px;
   }
+}
+
+
+.food-type__link:hover::after {
+  content: url("../img/icon-arrow-long.svg");
+}
+
+.food-type__link:active {
+  opacity: 0.3;
 }
