@@ -51,15 +51,16 @@
   text-decoration: none;
   color: inherit;
 
-  &--main {
+  &--active {
     @media (min-width: variables.$tablet-width) {
       border-bottom: 2px solid #68b738;
       padding-bottom: 7px;
       height: 24px;
+      pointer-events: none;
     }
   }
 
-  &--active {
+  &--main {
     @media (min-width: variables.$desktop-width) {
       border-bottom: 2px solid #ffffff;
     }
