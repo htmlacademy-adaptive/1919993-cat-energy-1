@@ -121,6 +121,17 @@
           <span class="example__cost">15 000 руб.</span>
         </div>
         <div class="example-slider">
+          <div class="example-slider__comp-img">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="img/cat-example-after-tablet.png 1x, img/cat-example-after-tablet@2x.png 2x" width="560"
+                height="512">
+              <img class="example-slider__image" src="img/cat-example-after.png" alt="Пример после" width="280"
+                height="256" srcset="img/cat-example-after@2x.png 2x">
+            </picture>
+        </div>
+        <button type="button" class="example-slider__comp"></button>
+        <div class="example-slider__comp-img example-slider__comp-img--overlay">
           <picture>
             <source media="(min-width: 768px)"
               srcset="img/cat-example-before-tablet.png 1x, img/cat-example-before-tablet@2x.png 2x" width="560"
@@ -128,13 +139,7 @@
             <img class="example-slider__image" src="img/cat-example-before.png" alt="Пример до" width="280" height="256"
               srcset="img/cat-example-before@2x.png 2x">
           </picture>
-          <picture>
-            <source media="(min-width: 768px)"
-              srcset="img/cat-example-after-tablet.png 1x, img/cat-example-after-tablet@2x.png 2x" width="560"
-              height="512">
-            <img class="example-slider__image" src="img/cat-example-after.png" alt="Пример после" width="280"
-              height="256" srcset="img/cat-example-after@2x.png 2x">
-          </picture>
+        </div>
         </div>
       </div>
     </section>

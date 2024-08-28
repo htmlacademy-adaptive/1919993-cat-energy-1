@@ -1,0 +1,27 @@
+@use "../variables.scss" as variables;
+
+.example-slider {
+  position: relative;
+  height: 256px;
+}
+
+.example-slider__comp-img {
+  position: absolute;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom, #eaeaea 0%, #eaeaea 100%);
+}
+
+.example-slider__image {
+  display: block;
+}
+
+.example-slider__comp {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 2px solid #666666;
+}
