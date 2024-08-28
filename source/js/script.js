@@ -45,7 +45,6 @@ function slideMove(e) {
 function slideReady(e) {
   e.preventDefault();
   clicked = 1;
-  window.addEventListener("mousemove", slideMove);
 
 }
 
