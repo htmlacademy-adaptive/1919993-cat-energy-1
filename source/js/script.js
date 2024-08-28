@@ -27,7 +27,7 @@ function slide(x) {
 function getCursorPos(e) {
   let a = 0, x = 0;
   e = (e.changedTouches) ? e.changedTouches[0] : e;
-  a = img.getBoundingClientRect();
+  a = imgOverlay.getBoundingClientRect();
   x = e.pageX - a.left;
   x = x - window.pageXOffset;
   return x;
