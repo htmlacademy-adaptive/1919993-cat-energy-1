@@ -34,7 +34,7 @@ function getCursorPos(e) {
 }
 
 function slideMove(e) {
-  const pos = 0;
+  let pos = 0;
   if (clicked == 0) return false;
   pos = getCursorPos(e)
   if (pos < 0) pos = 0;
