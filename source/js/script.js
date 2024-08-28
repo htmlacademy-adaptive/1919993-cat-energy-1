@@ -54,7 +54,7 @@ function slideFinish(e) {
 
 
 function compareImages() {
-  const w = img.offsetWidth;
+  sliderWidth = slider.offsetWidth;
   const h = img.offsetHeight;
   img.style.width = (w / 2) + "px";
   slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
