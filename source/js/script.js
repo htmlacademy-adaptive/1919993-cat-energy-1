@@ -66,4 +66,17 @@ function initSlider() {
 }
 
 
-initSlider();
+function init() {
+  initSlider();
+  window.addEventListener("resize", initSlider);
+
+  sliderButton.addEventListener("mousedown", slideReady);
+  window.addEventListener("mouseup", slideFinish);
+  window.addEventListener("mousemove", slideMove);
+
+  sliderButton.addEventListener("touchstart", slideReady);
+  window.addEventListener("touchend", slideFinish);
+  window.addEventListener("touchmove", slideMove);
+}
+
+init();
