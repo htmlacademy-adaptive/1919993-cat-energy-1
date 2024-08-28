@@ -38,7 +38,7 @@ function slideMove(e) {
   if (clicked == 0) return false;
   pos = getCursorPos(e)
   if (pos < 0) pos = 0;
-  if (pos > w) pos = w;
+  if (pos > sliderWidth) pos = sliderWidth;
   slide(pos);
 }
 
