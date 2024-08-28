@@ -29,7 +29,7 @@ function getCursorPos(e) {
   e = (e.changedTouches) ? e.changedTouches[0] : e;
   a = imgOverlay.getBoundingClientRect();
   x = e.pageX - a.left;
-  x = x - window.pageXOffset;
+  x = x - window.scrollX;
   return x;
 }
 
