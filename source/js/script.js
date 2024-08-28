@@ -21,7 +21,7 @@ navToggle.addEventListener('click', function () {
 
 function slide(x) {
   imgOverlay.style.width = x + "px";
-  slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+  sliderButton.style.left = imgOverlay.offsetWidth - (sliderButton.offsetWidth / 2) + "px";
 }
 
 function getCursorPos(e) {
