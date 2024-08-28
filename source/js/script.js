@@ -56,7 +56,7 @@ function slideFinish(e) {
 function compareImages() {
   sliderWidth = slider.offsetWidth;
   imgOverlay.style.width = (sliderWidth / 2) + "px";
-  slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+  sliderButton.style.left = (sliderWidth / 2) - (sliderButton.offsetWidth / 2) + "px";
   slider.addEventListener("mousedown", slideReady);
   window.addEventListener("mouseup", slideFinish);
 }
