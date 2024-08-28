@@ -20,7 +20,7 @@ navToggle.addEventListener('click', function () {
 });
 
 function slide(x) {
-  img.style.width = x + "px";
+  imgOverlay.style.width = x + "px";
   slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
 }
 
