@@ -3,7 +3,8 @@ const navToggle = document.querySelector('.main-nav__toggle');
 let clicked = 0;
 const slider = document.querySelector('.example-slider');
 const sliderButton = document.querySelector('.example-slider__comp');
-const img = document.querySelector('.example-slider__comp-img--overlay');
+const imgOverlay = document.querySelector('.example-slider__comp-img--overlay');
+let sliderWidth = 0;
 
 
 navMain.classList.remove('main-nav--nojs');
