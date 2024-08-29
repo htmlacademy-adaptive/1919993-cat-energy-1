@@ -2,13 +2,12 @@
 
 .example-slider {
   position: relative;
+  width: 280px;
   height: 256px;
 
   @media (min-width: variables.$tablet-width) {
     height: 512px;
-    top: 85px;
-    left: 74px;
-    width: 580px;
+    width: 560px;
   }
 
   @media (min-width: variables.$desktop-width) {
