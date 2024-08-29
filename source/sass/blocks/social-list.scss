@@ -25,11 +25,15 @@
   list-style-type: none;
 }
 
-.social-list__link:hover path,
-.social-list__link:focus path {
-  fill: #68b738;
+.social-list__link{
+  color: #666666;
 }
 
-.social-list__link:active path {
-  fill: rgba(104, 183, 56, 0.4);
+.social-list__link:hover,
+.social-list__link:focus {
+  color: #68b738;
+}
+
+.social-list__link:active {
+  color: rgba(104, 183, 56, 0.4);
 }
