@@ -54,7 +54,7 @@
   &--active {
     @media (min-width: variables.$tablet-width) {
       border-bottom: 2px solid #68b738;
-      padding-bottom: 7px;
+      padding-bottom: 12px;
       height: 24px;
       pointer-events: none;
     }

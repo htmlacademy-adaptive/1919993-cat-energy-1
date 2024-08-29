@@ -3,25 +3,90 @@
 .example-slider {
   position: relative;
   height: 256px;
+
+  @media (min-width: variables.$tablet-width) {
+    height: 512px;
+    top: 85px;
+    left: 74px;
+    width: 580px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    top: 0;
+    left: 50px;
+  }
 }
 
 .example-slider__comp-img {
   position: absolute;
   overflow: hidden;
   background-image: linear-gradient(to bottom, #eaeaea 0%, #eaeaea 100%);
+
+  @media (min-width: variables.$tablet-width) {
+    background-image: linear-gradient(to bottom, #ffffff 151px, #eaeaea 151px, #eaeaea 462px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    background-image: linear-gradient(to bottom, #ffffff 135px, #eaeaea 135px, #eaeaea 462px);
+  }
 }
 
 .example-slider__image {
   display: block;
+  z-index: 1;
 }
 
 .example-slider__comp {
   position: absolute;
-  z-index: 9;
   cursor: ew-resize;
   width: 40px;
   height: 40px;
   background-color: #ffffff;
   border-radius: 50%;
   border: 2px solid #666666;
+  background-image: url("../img/arrow-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 9;
+  top: 110px;
+
+  @media (min-width: variables.$tablet-width) {
+    top: 236px;
+    left: 260px;
+  }
+}
+
+
+.example-slider__comp::before {
+  content: "";
+  width: 4px;
+  height: 109px;
+  background-color: #666666;
+  display: block;
+  border-radius: 3px;
+  position: absolute;
+  top: -109px;
+  left: 16px;
+
+  @media (min-width: variables.$tablet-width) {
+    height: 238px;
+    top: -238px;
+  }
+}
+
+
+.example-slider__comp::after {
+  content: "";
+  width: 4px;
+  height: 110px;
+  background-color: #666666;
+  display: block;
+  border-radius: 3px;
+  position: absolute;
+  top: 36px;
+  left: 16px;
+
+  @media (min-width: variables.$tablet-width) {
+    height: 238px;
+  }
 }

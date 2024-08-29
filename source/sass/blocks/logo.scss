@@ -25,9 +25,4 @@
 
 .logo__text {
   margin-bottom: 3px;
-
-  @media (min-width: variables.$desktop-width) {
-    width: 118px;
-    height: 21px;
-  }
 }
