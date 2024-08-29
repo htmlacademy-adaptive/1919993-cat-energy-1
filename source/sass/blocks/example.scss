@@ -192,3 +192,13 @@
     flex-direction: column;
   }
 }
+
+.example__images {
+  @media (min-width: variables.$tablet-width) {
+    margin: 86px auto 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 auto;
+  }
+}
