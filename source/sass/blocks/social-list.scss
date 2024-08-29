@@ -2,7 +2,7 @@
 
 .social-list {
   display: flex;
-  width: 132px;
+  width: 126px;
   justify-content: space-between;
   padding: 20px 74px 20px;
   border-top: 1px solid #d9d9d9;
@@ -16,7 +16,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-right: 382px;
+    margin-right: 387px;
     padding: 45px 0 0;
   }
 }

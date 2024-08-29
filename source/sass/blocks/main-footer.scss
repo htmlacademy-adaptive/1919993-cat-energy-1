@@ -6,6 +6,8 @@
   align-items: center;
   justify-content: space-between;
   min-width: 280px;
+  width: 27px;
+  color: #666666;
 
   @media (min-width: variables.$tablet-width) {
     min-width: 162px;
@@ -13,11 +15,11 @@
 }
 
 .main-footer__htmlacademy:hover path {
-  fill: #68b738;
+  color: #68b738;
 }
 
 .main-footer__htmlacademy:active path {
-  fill: rgba(104, 183, 56, 0.4);
+  color: rgba(104, 183, 56, 0.4);
 }
 
 .main-footer__htmlacademy:active span {
@@ -75,10 +77,11 @@
   }
 }
 
-.main-footer__logo:hover path {
-  fill: #3e3e3e;
+
+.main-footer__logo:hover {
+  opacity: 0.8;
 }
 
-.main-footer__logo:active path {
-  fill: #6b6b6b;
+.main-footer__logo:active {
+  opacity: 0.6;
 }
