@@ -13,8 +13,10 @@ navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
     navMain.classList.add('main-nav--opened');
-  } else {
+  }
+  else {
     navMain.classList.add('main-nav--closed');
+
     navMain.classList.remove('main-nav--opened');
   }
 });
@@ -57,8 +59,8 @@ function compareImages() {
   sliderWidth = slider.offsetWidth;
   imgOverlay.style.width = (sliderWidth / 2) + "px";
   sliderButton.style.left = (sliderWidth / 2) - (sliderButton.offsetWidth / 2) + "px";
-  
- 
+
+
 }
 
 function initSlider() {

@@ -33,7 +33,14 @@
 
 .example-slider__image {
   display: block;
-  z-index: 1;
+}
+
+.example-slider__comp-img--overlay {
+  width: 140px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 280px;
+  }
 }
 
 .example-slider__comp {
@@ -44,9 +51,6 @@
   background-color: #ffffff;
   border-radius: 50%;
   border: 2px solid #666666;
-  background-image: url("../img/arrow-slider.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   z-index: 9;
   top: 110px;
 
@@ -89,4 +93,30 @@
   @media (min-width: variables.$tablet-width) {
     height: 238px;
   }
+}
+
+.example-slider__comp:hover {
+  border: 2px solid #68b738;
+}
+
+.example-slider__comp:hover .example-slider__comp-icon path {
+  fill: #68b738;
+}
+
+.example-slider__comp:hover::before,
+.example-slider__comp:hover::after {
+  background-color: #68b738;
+}
+
+.example-slider__comp:active {
+  border: 2px solid rgba(94, 170, 47, 0.6);
+}
+
+.example-slider__comp:active .example-slider__comp-icon path {
+  fill: rgba(94, 170, 47, 0.6);
+}
+
+.example-slider__comp:active::before,
+.example-slider__comp:active::after {
+  background-color: rgba(94, 170, 47, 0.6);
 }
