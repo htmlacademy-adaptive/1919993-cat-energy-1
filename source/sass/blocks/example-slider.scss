@@ -2,6 +2,7 @@
 
 .example-slider {
   position: relative;
+  width: 280px;
   height: 256px;
 
   @media (min-width: variables.$tablet-width) {
