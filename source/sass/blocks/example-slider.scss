@@ -51,6 +51,10 @@
   border-radius: 50%;
   border: 2px solid #666666;
   z-index: 9;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
   top: 110px;
 
   @media (min-width: variables.$tablet-width) {

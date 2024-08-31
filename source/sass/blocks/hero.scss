@@ -148,7 +148,7 @@
 
   @media (min-width: variables.$desktop-width) {
     margin-left: 80px;
-    padding: 0;
-    height: 54px;
+    grid-area: button;
+    align-self: start;
   }
 }

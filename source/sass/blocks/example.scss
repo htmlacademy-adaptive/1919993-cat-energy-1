@@ -58,12 +58,12 @@
   @media (min-width: variables.$tablet-width) {
     font-size: 16px;
     line-height: 150%;
-    margin-bottom: 55px;
+    margin-bottom: 63px;
   }
 
   @media (min-width: variables.$desktop-width) {
     width: 432px;
-    margin-bottom: 66px;
+    margin-bottom: 74px;
   }
 }
 
@@ -74,9 +74,12 @@
   color: #444444;
   margin-top: 0;
   margin-bottom: 21px;
+  flex-wrap: wrap;
+  row-gap: 10px;
 
   @media (min-width: variables.$tablet-width) {
     width: 365px;
+    margin-bottom: 12px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -87,6 +90,8 @@
 .example__info-item {
   width: 124px;
   height: 70px;
+  display: flex;
+  flex-direction: column-reverse;
 
   @media (min-width: variables.$tablet-width) {
     width: 160px;
@@ -160,7 +165,7 @@
     flex-direction: column;
     align-items: flex-end;
     margin-left: 0;
-    margin-top: 11px;
+    margin-top: 3px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -199,7 +204,6 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin: 0 50px 0  0;
-
+    margin: 0 50px 0 0;
   }
 }
