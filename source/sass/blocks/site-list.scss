@@ -17,6 +17,7 @@
     flex-wrap: wrap;
     gap: 33px;
     background-color: transparent;
+    width: 436px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -24,6 +25,7 @@
     justify-content: flex-end;
     color: #ffffff;
     font-size: 20px;
+    width: 478px;
 
     &--inner-page {
       color: #000000;

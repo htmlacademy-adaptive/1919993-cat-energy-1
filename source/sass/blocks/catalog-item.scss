@@ -13,7 +13,8 @@
     margin-top: 10px;
     width: 324px;
     position: relative;
-    min-height: 484px;
+    height: fit-content;
+    padding-bottom: 38px;
 
     &--more {
       background: transparent;
@@ -25,7 +26,8 @@
 
   @media (min-width: variables.$desktop-width) {
     width: 245px;
-    min-height: 484px;
+    height: fit-content;
+    padding-bottom: 38px;
   }
 }
 

@@ -2,6 +2,14 @@
 
 .catalog {
   margin-bottom: 35px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 19px;
+  }
 }
 
 .catalog__container {
