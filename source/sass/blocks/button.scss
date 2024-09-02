@@ -11,21 +11,19 @@
   background-color: #68b738;
   border: none;
   text-decoration: none;
+  padding: 10px 0;
 
   &--secondary {
     background-color: #f2f2f2;
     color: #444444;
-    padding: 9px 93px;
-    margin-top: 21px;
 
     @media (min-width: variables.$tablet-width) {
-      padding: 9px 79px;
-      margin-top: 83px;
+      padding: 10px 79px;
+      width: fit-content;
     }
 
     @media (min-width: variables.$desktop-width) {
       padding: 10px 40px;
-      margin-top: 90px;
     }
   }
 

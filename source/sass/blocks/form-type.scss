@@ -7,7 +7,8 @@
   border-top: 1px solid #d9d9d9;
   border-left: 0;
   border-right: 0;
-  padding-top: 22px;
+  padding-top: 29px;
+  padding-bottom: 21px;
 
   @media (min-width: variables.$tablet-width) {
     border: 0;
@@ -17,6 +18,9 @@
 .form-type__container {
   padding: 0;
   margin: 0;
+  gap: 23px;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: variables.$tablet-width) {
     border: 1px solid #d9d9d9;

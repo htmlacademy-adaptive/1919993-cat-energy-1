@@ -1,3 +1,39 @@
+@use "../variables.scss" as variables;
+
+.label-type {
+  position: relative;
+  display: block;
+  line-height: 20px;
+  margin: 0;
+}
+
 .label-type__text {
-  margin-left: 15px;
+  margin-left: 44px;
+}
+
+.label-type__radio-control {
+  position: absolute;
+  top: -7px;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #cdcdcd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.label-type__input[type="radio"] + .label-type__radio-control {
+  border-radius: 50%;
+}
+
+.label-type__input[type="radio"]:checked ~ .label-type__radio-control::before {
+  position: absolute;
+  top: 8px;
+  left: 7px;
+  width: 13px;
+  height: 13px;
+  background-color: #68b738;
+  border-radius: 50%;
+  content: "";
 }

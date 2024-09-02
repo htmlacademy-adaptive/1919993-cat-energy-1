@@ -1,10 +1,20 @@
 @use "../variables.scss" as variables;
 
+.label-feed__input {
+  border: 1px solid #cdcdcd;
+  padding: 13px 0 13px 15px;
+}
+
+.label-feed__text {
+  margin-right: 13px;
+}
+
 
 .label-feed__email {
   background-image: url("../img/form-email.svg");
   background-repeat: no-repeat;
-  background-position: center right 14px;
+  background-position: center right 11px;
+  width: 200px;
 
   @media (min-width: variables.$tablet-width) {
     width: 100%;
@@ -15,7 +25,8 @@
 .label-feed__tel {
   background-image: url("../img/form-tel.svg");
   background-repeat: no-repeat;
-  background-position: center right 14px;
+  background-position: center right 12px;
+  width: 183px;
 
   @media (min-width: variables.$tablet-width) {
     width: 100%;

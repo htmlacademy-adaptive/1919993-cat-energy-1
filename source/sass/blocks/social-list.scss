@@ -1,9 +1,10 @@
 @use "../variables.scss" as variables;
 
 .social-list {
+  margin-bottom: 20px;
   display: flex;
   gap: 28px;
-  padding: 20px 74px 20px;
+  padding: 23px 74px 17px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
   flex-wrap: wrap;
