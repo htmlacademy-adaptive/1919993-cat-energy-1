@@ -10,14 +10,14 @@
   @media (min-width: variables.$tablet-width) {
     font-size: 16px;
     line-height: 20px;
-    margin: 12px auto 0;
+    padding-top: 14px;
     width: 250px;
     height: fit-content;
   }
 
   @media (min-width: variables.$desktop-width) {
     width: 169px;
-    margin: 17px auto 0;
+    margin: 4px auto 0;
   }
 }
 

@@ -10,17 +10,16 @@
 
   @media (min-width: variables.$tablet-width) {
     background: linear-gradient(#ffffff 81px, #f2f2f2 81px, #f2f2f2 430px);
-    margin-top: 10px;
     width: 324px;
     position: relative;
     height: fit-content;
-    padding-bottom: 38px;
+    padding-bottom: 40px;
+    padding-top: 10px;
 
     &--more {
       background: transparent;
       border: 1px solid #cdcdcd;
-      height: 368px;
-      margin-top: 95px;
+      margin-top: auto;
     }
   }
 
@@ -30,8 +29,7 @@
     padding-bottom: 38px;
 
     &--more {
-      height: 368px;
-      margin-top: 91px;
+      padding-top: 20px;
     }
   }
 }
@@ -60,10 +58,11 @@
   @media (min-width: variables.$tablet-width) {
     grid-template-columns: 1fr;
     margin-bottom: 28px;
+    justify-items: center;
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-bottom: 35px;
+    margin-bottom: 33px;
   }
 }
 
@@ -92,17 +91,17 @@
     font-size: 20px;
     line-height: 24px;
     margin: 0 auto;
-    padding-top: 222px;
 
     &--more {
       width: 175px;
       margin-bottom: 23px;
-      padding-top: 138px;
+      padding-top: 152px;
     }
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding-top: 212px;
+    padding-top: 0;
+    margin-bottom: 0;
 
     &--more {
       padding-top: 129px;
@@ -153,17 +152,17 @@
   @media (min-width: variables.$tablet-width) {
     width: 200px;
     height: 210px;
-    position: absolute;
-    top: 8px;
-    left: 79px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
   }
 
   @media (min-width: variables.$desktop-width) {
     top: 10px;
     left: 38px;
     width: 169px;
+    margin-bottom: 12px;
   }
 }
 

@@ -1,7 +1,7 @@
 @use "../variables.scss" as variables;
 
 .catalog {
-  margin-bottom: 76px;
+  margin-bottom: 34px;
 
   @media (min-width: variables.$tablet-width) {
     margin-bottom: 76px;
@@ -30,11 +30,11 @@
 
   @media (min-width: variables.$tablet-width) {
     font-size: 60px;
-    margin: 52px 0 74px;
+    margin: 52px 0 84px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin: 63px 0 74px;
+    margin: 63px 0 84px;
   }
 }
 
@@ -46,13 +46,14 @@
 
   @media (min-width: variables.$tablet-width) {
     grid-template-columns: 1fr 1fr;
-    row-gap: 52px;
+    row-gap: 60px;
     column-gap: 60px;
+    align-items: end;
   }
 
   @media (min-width: variables.$desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 54px;
+    row-gap: 65px;
     column-gap: 80px;
   }
 }

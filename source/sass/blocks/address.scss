@@ -1,22 +1,20 @@
 @use "../variables.scss" as variables;
 
-
-.address__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 26px 0;
-  background-color: #ffffff;
-
-
-  &--grey {
+.address {
+  &--theme-gray {
     background-color: #f2f2f2;
 
     @media (min-width: variables.$desktop-width) {
       background-color: #ffffff;
     }
   }
+}
 
+.address__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 0;
 
   @media (min-width: variables.$tablet-width) {
     padding: 60px 40px;
@@ -30,6 +28,7 @@
     position: absolute;
     z-index: 1;
     margin-top: 95px;
+    background-color: #ffffff;
   }
 }
 
