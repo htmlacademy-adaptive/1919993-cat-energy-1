@@ -1,0 +1,14 @@
+@use "../variables.scss" as variables;
+
+
+.main-container {
+  margin-bottom: 31px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 59px;
+  }
+}

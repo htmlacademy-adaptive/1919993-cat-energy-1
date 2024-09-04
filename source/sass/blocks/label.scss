@@ -13,6 +13,10 @@
   text-transform: uppercase;
   color: #444444;
   min-width: fit-content;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .label__input {
@@ -21,10 +25,30 @@
   font-size: 20px;
   text-transform: uppercase;
   color: #444444;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
   width: 100%;
   box-sizing: border-box;
   height: 45px;
   margin-left: 13px;
   padding-left: 15px;
+
+  @media (min-width: variables.$tablet-width) {
+    height: 52px;
+    padding-left: 20px;
+  }
+}
+
+.label__input:hover {
+  border: 1px solid #cdcdcd;
+  transition: 0.3s ease;
+}
+
+.label__input:focus {
+  border: 2px solid #444444;
+  transition: 0.3s ease;
+}
+
+.label__input:invalid {
+  border: 2px solid #ffb2b2;
+  transition: 0.3s ease;
 }

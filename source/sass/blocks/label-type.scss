@@ -2,13 +2,21 @@
 
 .label-type {
   position: relative;
-  display: block;
+  display: flex;
   line-height: 20px;
   margin: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    height: 40px;
+  }
 }
 
 .label-type__text {
   margin-left: 44px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-left: 59px;
+  }
 }
 
 .label-type__radio-control {
@@ -21,6 +29,12 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 38px;
+    height: 38px;
+    top: 0;
+  }
 }
 
 .label-type__input[type="radio"] + .label-type__radio-control {
@@ -36,4 +50,26 @@
   background-color: #68b738;
   border-radius: 50%;
   content: "";
+
+  @media (min-width: variables.$tablet-width) {
+    width: 18px;
+    height: 18px;
+    top: 9px;
+    left: 9px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    top: 11px;
+    left: 11px;
+  }
+}
+
+.label-type:hover .label-type__radio-control {
+  border: 1px solid #bababa;
+  transition: 0.3s ease;
+}
+
+.label-type:disabled {
+  opacity: 0.3;
+  transition: 0.3s ease;
 }

@@ -1,25 +1,55 @@
 @use "../variables.scss" as variables;
 
-
 .form-extra {
   border: 0;
   display: flex;
   flex-direction: column;
-  margin-bottom: 34px;
-  margin-top: 23px;
+  margin-bottom: 35px;
+  margin-top: 26px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-top: 65px;
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 74px;
+    margin-bottom: 64px;
+  }
 }
 
 .form-extra__container {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 12px;
 
   @media (min-width: variables.$tablet-width) {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+    row-gap: 42px;
   }
 
   @media (min-width: variables.$desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 80px;
+  }
+}
+
+.form-extra__title {
+  margin-bottom: 33px;
+  margin-top: -10px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-top: -3px;
+    margin-bottom: 62px;
+  }
+}
+
+.form-extra__title-text {
+  width: 141px;
+  margin-top: 10px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-top: 2px;
   }
 }

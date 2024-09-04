@@ -1,8 +1,19 @@
 @use "../variables.scss" as variables;
 
+
+.label-feed {
+  @media (min-width: variables.$tablet-width) {
+    width: 628px;
+  }
+}
+
 .label-feed__input {
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
   padding: 13px 0 13px 15px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 15px 0 13px 20px;
+  }
 }
 
 .label-feed__text {
@@ -32,4 +43,33 @@
     width: 100%;
     box-sizing: border-box;
   }
+}
+
+.label-feed__input:hover {
+  border: 1px solid #cdcdcd;
+  transition: 0.3s ease;
+}
+
+.label-feed__email:focus {
+  background-image: url("../img/form-email-focus.svg");
+  border: 2px solid #444444;
+  transition: 0.3s ease;
+}
+
+.label-feed__tel:focus {
+  background-image: url("../img/form-tel-focus.svg");
+  border: 2px solid #444444;
+  transition: 0.3s ease;
+}
+
+.label-feed__email:invalid {
+  background-image: url("../img/form-email-invalid.svg");
+  border: 2px solid #ff8282;
+  transition: 0.3s ease;
+}
+
+.label-feed__tel:invalid {
+  background-image: url("../img/form-tel-invalid.svg");
+  border: 2px solid #ff8282;
+  transition: 0.3s ease;
 }
