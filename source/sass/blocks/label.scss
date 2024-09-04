@@ -22,7 +22,8 @@
 .label__input {
   font-family: variables.$accent-font;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
   color: #444444;
   border: 1px solid #e7e7e7;
@@ -31,10 +32,12 @@
   height: 45px;
   margin-left: 13px;
   padding-left: 15px;
+  cursor: pointer;
 
   @media (min-width: variables.$tablet-width) {
     height: 52px;
     padding-left: 20px;
+    font-size: 20px;
   }
 }
 

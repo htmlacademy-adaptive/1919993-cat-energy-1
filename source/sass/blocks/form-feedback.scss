@@ -9,11 +9,14 @@
   @media (min-width: variables.$tablet-width) {
     margin-top: 65px;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 72px;
+  }
 }
 
 .form-feedback__input {
   min-height: 150px;
-  width: 100%;
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
   margin: 0;
@@ -24,6 +27,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  resize: vertical;
 
   @media (min-width: variables.$tablet-width) {
     width: 628px;

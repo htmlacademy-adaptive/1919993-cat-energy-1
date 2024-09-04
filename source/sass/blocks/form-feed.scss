@@ -9,6 +9,10 @@
   @media (min-width: variables.$tablet-width) {
     margin-top: 65px;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .form-feed__container {

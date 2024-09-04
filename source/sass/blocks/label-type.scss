@@ -29,6 +29,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  cursor: pointer;
 
   @media (min-width: variables.$tablet-width) {
     width: 38px;
@@ -69,7 +70,8 @@
   transition: 0.3s ease;
 }
 
-.label-type:disabled {
+.label-type__input[type="radio"]:disabled ~ .label-type__radio-control,
+.label-type__input[type="radio"]:disabled ~ .label-type__text {
   opacity: 0.3;
   transition: 0.3s ease;
 }
