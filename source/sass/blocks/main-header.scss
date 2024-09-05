@@ -4,20 +4,42 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  outline: 1px solid #26c143;
   position: relative;
+  margin-top: 13px;
 
   @media (min-width: variables.$tablet-width) {
     min-height: 50px;
     flex-wrap: nowrap;
     justify-content: space-between;
+    margin-top: 18px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 12px;
   }
 
   &__container {
+    padding-bottom: 11px;
+
     @media (min-width: variables.$tablet-width) {
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
   }
+}
+
+.main-header__logo-text {
+  @media (min-width: variables.$desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
+}
+
+.main-header__logo:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo:active {
+  opacity: 0.6;
 }

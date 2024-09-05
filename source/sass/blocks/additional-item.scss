@@ -2,9 +2,18 @@
 
 .additional-item {
   list-style-type: none;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-right: 37px;
+    padding-left: 37px;
+    padding-bottom: 28px;
+  }
 
   @media (min-width: variables.$desktop-width) {
     display: flex;
+    padding: 0;
   }
 }
 
@@ -16,6 +25,18 @@
   text-transform: uppercase;
   color: #222222;
   width: 163px;
+  margin-top: 0;
+  margin-bottom: 13px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    min-width: 326px;
+    margin-bottom: 0;
+  }
 }
 
 .additional-item__container-text {
@@ -27,14 +48,60 @@
   color: #444444;
   width: 280px;
   justify-content: space-between;
+  margin-bottom: 15px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: fit-content;
+    margin-top: 4px;
+    margin-right: 4px;
+    gap: 51px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    justify-content: flex-start;
+    gap: 0;
+    margin-bottom: 0;
+  }
+}
+
+.additional-item__value {
+  margin: 0;
+
+  @media (min-width: variables.$desktop-width) {
+    min-width: 243px;
+    text-align: left;
+  }
+}
+
+.additional-item__price {
+  @media (min-width: variables.$desktop-width) {
+    min-width: 78px;
+    text-align: left;
+  }
 }
 
 
 .additional-item__button {
-  width: 100%;
-
   @media (min-width: variables.$desktop-width) {
     width: 244px;
-    margin-left: 40px;
+    height: fit-content;
+  }
+}
+
+.additional-item__container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: variables.$tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 12px;
+    margin-bottom: 6px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 22px;
   }
 }

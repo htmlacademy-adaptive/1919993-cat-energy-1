@@ -3,8 +3,6 @@
 .button {
   font-family: variables.$accent-font;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 125%;
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -12,11 +10,48 @@
   color: #ffffff;
   background-color: #68b738;
   border: none;
-  height: 40px;
   text-decoration: none;
+  padding: 10px 0;
+  cursor: pointer;
 
   &--secondary {
     background-color: #f2f2f2;
     color: #444444;
+
+    @media (min-width: variables.$tablet-width) {
+      padding: 10px 79px;
+      width: fit-content;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      padding: 10px 40px;
+    }
   }
+
+  @media (min-width: variables.$mobile-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    &--sized-1 {
+      padding-top: 14px;
+      padding-bottom: 14px;
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+}
+
+.button:hover {
+  background: #5eaa2f;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button--secondary:hover,
+.button--secondary:active {
+  background: #ebebeb;
 }

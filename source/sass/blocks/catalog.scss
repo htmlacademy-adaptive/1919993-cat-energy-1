@@ -1,7 +1,23 @@
 @use "../variables.scss" as variables;
 
 .catalog {
-  margin-bottom: 35px;
+  margin-bottom: 34px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 19px;
+  }
+}
+
+.catalog__container {
+  border-top: 1px solid #d9d9d9;
+
+  @media (min-width: variables.$tablet-width) {
+    border-top: 0;
+  }
 }
 
 .catalog__title {
@@ -10,22 +26,34 @@
   font-size: 36px;
   line-height: 100%;
   color: #000000;
+  margin: 27px 0 41px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 60px;
+    margin: 52px 0 84px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 63px 0 84px;
+  }
 }
 
 .catalog__list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 30px;
+
   padding: 0;
 
   @media (min-width: variables.$tablet-width) {
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    row-gap: 60px;
+    column-gap: 60px;
+    align-items: end;
   }
 
   @media (min-width: variables.$desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 63px;
+    row-gap: 65px;
     column-gap: 80px;
   }
 }

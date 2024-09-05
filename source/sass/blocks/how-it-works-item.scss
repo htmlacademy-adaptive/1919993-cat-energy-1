@@ -61,7 +61,6 @@
     min-height: 280px;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 250px;
     counter-increment: how-it-works-item;
 
     &::after {
@@ -76,5 +75,48 @@
       top: -38px;
       right: 0;
     }
+
+    &--leaf {
+      width: 230px;
+    }
+
+    &--powder {
+      width: 246px;
+      margin-right: 3px;
+    }
+
+    &--bowl {
+      width: 247px;
+    }
+
+    &--time {
+      width: 249px;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    &--leaf {
+      margin-right: 95px;
+    }
+
+    &--powder {
+      margin-right: 79px;
+    }
+
+    &--bowl {
+      margin-right: 74px;
+    }
+  }
+}
+
+.how-it-works-item p {
+  margin: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 0;
+    margin-top: 11px;
+    width: 245px;
   }
 }

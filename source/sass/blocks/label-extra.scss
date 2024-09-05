@@ -1,0 +1,50 @@
+@use "../variables.scss" as variables;
+
+.label-extra {
+  position: relative;
+  display: flex;
+  padding-left: 45px;
+  line-height: 20px;
+  margin: 0;
+  height: 30px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-left: 60px;
+  }
+}
+
+.label-extra__checkbox-control {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #cdcdcd;
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.label-extra__input:checked + .label-extra__checkbox-control {
+  position: absolute;
+  content: "";
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.label-extra:hover .label-extra__checkbox-control {
+  border: 1px solid #bababa;
+  transition: 0.3s ease;
+}
+
+.label-extra__input[type="checkbox"]:disabled ~ .label-extra__checkbox-control,
+.label-extra__input[type="checkbox"]:disabled ~ .label-extra__text {
+  opacity: 0.3;
+  transition: 0.3s ease;
+}

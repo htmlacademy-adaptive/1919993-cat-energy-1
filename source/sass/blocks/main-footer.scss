@@ -6,10 +6,23 @@
   align-items: center;
   justify-content: space-between;
   min-width: 280px;
+  color: #666666;
 
   @media (min-width: variables.$tablet-width) {
-    min-width: 168px;
+    min-width: 162px;
   }
+}
+
+.main-footer__htmlacademy:hover {
+  color: #68b738;
+}
+
+.main-footer__htmlacademy:active {
+  color: rgba(104, 183, 56, 0.4);
+}
+
+.main-footer__htmlacademy:active span {
+  opacity: 0.3;
 }
 
 .main-footer__htmlacademy-text {
@@ -22,6 +35,16 @@
   background-color: #f2f2f2;
   width: 100%;
   padding-bottom: 40px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 56px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-bottom: 69px;
+    padding-top: 27px;
+  }
 }
 
 .main-footer__wrapper {
@@ -29,12 +52,35 @@
   flex-direction: column;
 
   @media (min-width: variables.$tablet-width) {
-    justify-content: space-between;
     flex-direction: row;
+    align-items: center;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    align-items: flex-end;
   }
 }
 
 .main-footer__logo {
   display: flex;
   justify-content: center;
+  padding: 38px 74px 0;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0;
+    margin-right: 160px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-right: 416px;
+  }
+}
+
+
+.main-footer__logo:hover {
+  opacity: 0.8;
+}
+
+.main-footer__logo:active {
+  opacity: 0.6;
 }

@@ -4,6 +4,7 @@
   font-family: variables.$accent-font;
   font-weight: 400;
   font-size: 20px;
+  line-height: 29px;
   text-transform: uppercase;
   list-style-type: none;
   padding: 0;
@@ -11,16 +12,20 @@
   background-color: #ffffff;
 
   @media (min-width: variables.$tablet-width) {
+    font-size: 18px;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 33px;
     background-color: transparent;
+    width: 436px;
   }
 
   @media (min-width: variables.$desktop-width) {
     gap: 33px;
     justify-content: flex-end;
     color: #ffffff;
+    font-size: 20px;
+    width: 478px;
 
     &--inner-page {
       color: #000000;
@@ -28,19 +33,46 @@
   }
 }
 
-.site-list__navigation {
-  text-decoration: none;
-  color: inherit;
-}
 
 .site-list__item {
-  border-top: 2px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
   display: flex;
-  align-items: center;
   justify-content: center;
-  min-height: 66px;
+  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
 
   @media (min-width: variables.$tablet-width) {
     border-top: none;
+    align-items: baseline;
+    padding: 0;
   }
+}
+
+.site-list__navigation {
+  text-decoration: none;
+  color: inherit;
+
+  &--active {
+    @media (min-width: variables.$tablet-width) {
+      border-bottom: 2px solid #68b738;
+      padding-bottom: 12px;
+      height: 24px;
+      pointer-events: none;
+    }
+  }
+
+  &--main {
+    @media (min-width: variables.$desktop-width) {
+      border-bottom: 2px solid #ffffff;
+    }
+  }
+}
+
+.site-list__navigation:hover {
+  opacity: 0.6;
+}
+
+.site-list__navigation:active {
+  opacity: 0.3;
 }

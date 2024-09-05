@@ -1,0 +1,125 @@
+@use "../variables.scss" as variables;
+
+.example-slider {
+  position: relative;
+  width: 280px;
+  height: 256px;
+
+  @media (min-width: variables.$tablet-width) {
+    height: 512px;
+    width: 560px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    top: 0;
+    left: 50px;
+  }
+}
+
+.example-slider__comp-img {
+  position: absolute;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom, #eaeaea 0%, #eaeaea 100%);
+
+  @media (min-width: variables.$tablet-width) {
+    background-image: linear-gradient(to bottom, #ffffff 151px, #eaeaea 151px, #eaeaea 462px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    background-image: linear-gradient(to bottom, #ffffff 135px, #eaeaea 135px, #eaeaea 462px);
+  }
+}
+
+.example-slider__image {
+  display: block;
+}
+
+.example-slider__comp-img--overlay {
+  width: 140px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 280px;
+  }
+}
+
+.example-slider__comp {
+  position: absolute;
+  cursor: ew-resize;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 2px solid #666666;
+  z-index: 9;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  top: 110px;
+
+  @media (min-width: variables.$tablet-width) {
+    top: 236px;
+    left: 260px;
+  }
+}
+
+
+.example-slider__comp::before {
+  content: "";
+  width: 4px;
+  height: 109px;
+  background-color: #666666;
+  display: block;
+  border-radius: 3px;
+  position: absolute;
+  top: -109px;
+  left: 16px;
+
+  @media (min-width: variables.$tablet-width) {
+    height: 238px;
+    top: -238px;
+  }
+}
+
+
+.example-slider__comp::after {
+  content: "";
+  width: 4px;
+  height: 110px;
+  background-color: #666666;
+  display: block;
+  border-radius: 3px;
+  position: absolute;
+  top: 36px;
+  left: 16px;
+
+  @media (min-width: variables.$tablet-width) {
+    height: 238px;
+  }
+}
+
+.example-slider__comp:hover {
+  border: 2px solid #68b738;
+}
+
+.example-slider__comp:hover .example-slider__comp-icon path {
+  fill: #68b738;
+}
+
+.example-slider__comp:hover::before,
+.example-slider__comp:hover::after {
+  background-color: #68b738;
+}
+
+.example-slider__comp:active {
+  border: 2px solid rgba(94, 170, 47, 0.6);
+}
+
+.example-slider__comp:active .example-slider__comp-icon path {
+  fill: rgba(94, 170, 47, 0.6);
+}
+
+.example-slider__comp:active::before,
+.example-slider__comp:active::after {
+  background-color: rgba(94, 170, 47, 0.6);
+}

@@ -14,6 +14,15 @@
   @media (min-width: variables.$tablet-width) {
     flex-wrap: wrap;
     flex-direction: row;
+    row-gap: 37px;
     justify-content: space-between;
+    padding-right: 75px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-right: 0;
+    gap: 0;
+    justify-content: start;
   }
 }

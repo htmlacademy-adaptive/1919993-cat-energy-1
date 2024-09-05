@@ -17,3 +17,10 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+picture {
+  @media (min-width: variables.$desktop-width) {
+    display: grid;
+    grid-area: image;
+  }
+}
