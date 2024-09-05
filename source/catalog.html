@@ -8,7 +8,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -57,6 +57,8 @@
             <div class="catalog-item__container">
               <div class="catalog-item__image-container">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/taste-chicken-medium-tablet.webp 1x, img/taste-chicken-medium-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/taste-chicken-medium.webp 1x, img/taste-chicken-medium@2x.webp 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/taste-chicken-medium-tablet.png 1x, img/taste-chicken-medium-tablet@2x.png 2x"
                     width="161" height="172">
