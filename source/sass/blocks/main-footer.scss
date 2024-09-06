@@ -50,6 +50,7 @@
 .main-footer__wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   @media (min-width: variables.$tablet-width) {
     flex-direction: row;
@@ -72,7 +73,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-right: 416px;
+    margin-right: 164px;
   }
 }
 
