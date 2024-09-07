@@ -103,7 +103,7 @@
 }
 
 .example-slider__comp:hover .example-slider__comp-icon path {
-  fill: #68b738;
+  color: #68b738;
 }
 
 .example-slider__comp:hover::before,
@@ -116,7 +116,7 @@
 }
 
 .example-slider__comp:active .example-slider__comp-icon path {
-  fill: rgba(94, 170, 47, 0.6);
+  color: rgba(94, 170, 47, 0.6);
 }
 
 .example-slider__comp:active::before,
