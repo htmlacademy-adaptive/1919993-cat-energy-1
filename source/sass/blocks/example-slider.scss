@@ -99,11 +99,8 @@
 }
 
 .example-slider__comp:hover {
-  border: 2px solid #68b738;
-}
-
-.example-slider__comp:hover .example-slider__comp-icon path {
   color: #68b738;
+  border: 2px solid #68b738;
 }
 
 .example-slider__comp:hover::before,
@@ -113,9 +110,6 @@
 
 .example-slider__comp:active {
   border: 2px solid rgba(94, 170, 47, 0.6);
-}
-
-.example-slider__comp:active .example-slider__comp-icon path {
   color: rgba(94, 170, 47, 0.6);
 }
 
