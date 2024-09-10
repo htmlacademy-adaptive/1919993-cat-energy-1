@@ -22,7 +22,7 @@
   background-image: linear-gradient(to bottom, #eaeaea 0%, #eaeaea 100%);
 
   @media (min-width: variables.$tablet-width) {
-    background-image: linear-gradient(to bottom, #ffffff 151px, #eaeaea 151px, #eaeaea 462px);
+    background-image: linear-gradient(to bottom, #ffffff 152px, #eaeaea 151px, #eaeaea 462px);
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -96,6 +96,10 @@
   @media (min-width: variables.$tablet-width) {
     height: 238px;
   }
+}
+
+.example-slider__comp-icon {
+  color: #666666;
 }
 
 .example-slider__comp:hover {

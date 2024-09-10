@@ -3,6 +3,7 @@
 .label {
   display: flex;
   align-items: center;
+
 }
 
 .label__text {
@@ -47,7 +48,8 @@
 }
 
 .label__input:focus {
-  border: 2px solid #444444;
+  border: 1px solid #444444;
+  outline: 1px solid #444444;
   transition: 0.3s ease;
 }
 

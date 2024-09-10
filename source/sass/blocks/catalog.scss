@@ -12,11 +12,21 @@
   }
 }
 
-.catalog__container {
-  border-top: 1px solid #d9d9d9;
+.catalog__list{
+  position: relative;
+}
+
+.catalog__list::before {
+  content: "";
+  border-bottom: 1px solid #d9d9d9;
+  position: absolute;
+  top: 0;
+  left: 140px;
+  width: 100vw;
+  transform: translate(-50%);
 
   @media (min-width: variables.$tablet-width) {
-    border-top: 0;
+    display: none;
   }
 }
 

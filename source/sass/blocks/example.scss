@@ -7,9 +7,11 @@
   width: 100%;
 
   @media (min-width: variables.$tablet-width) {
-    background: linear-gradient(to bottom, #ffffff 599px, #eaeaea 599px, #eaeaea 462px);
+    background: linear-gradient(to bottom, #ffffff 620px, #eaeaea 599px, #eaeaea 462px);
     min-height: 1037px;
     padding-bottom: 0;
+    border-top: 1px solid #e6e6e6;
+    padding-top: 45px;
   }
 
   @media (min-width: variables.$desktop-width) {

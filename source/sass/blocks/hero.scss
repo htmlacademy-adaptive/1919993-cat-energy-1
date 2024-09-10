@@ -56,7 +56,9 @@
       order: 2;
       position: absolute;
       top: 252px;
-      left: 31px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
       z-index: -1;
     }
   }
@@ -74,7 +76,7 @@
     .hero__image {
       position: static;
       grid-area: image;
-      margin-left: -385px;
+      margin-left: -162px;
       margin-top: -11px;
     }
   }
@@ -137,10 +139,10 @@
 
 .hero__button {
   padding: 10px 0;
-  width: 280px;
+  width: 240px;
 
   @media (min-width: variables.$tablet-width) {
-    width: 244px;
+    width: 204px;
     margin-left: 90px;
     padding: 17px 0;
     line-height: 26px;
@@ -150,5 +152,12 @@
     margin-left: 80px;
     grid-area: button;
     align-self: start;
+  }
+}
+
+.hero__image-container {
+  @media (min-width: variables.$desktop-width) {
+    display: grid;
+    grid-area: image;
   }
 }

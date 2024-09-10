@@ -10,6 +10,7 @@
 
   @media (min-width: variables.$tablet-width) {
     padding-left: 60px;
+    padding: 5px 0 5px 60px;
   }
 }
 
@@ -47,4 +48,9 @@
 .label-extra__input[type="checkbox"]:disabled ~ .label-extra__text {
   opacity: 0.3;
   transition: 0.3s ease;
+}
+
+.label-extra:focus{
+  border: 1px solid #444444;
+  outline: 1px solid #444444;
 }

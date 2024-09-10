@@ -75,3 +75,8 @@
   opacity: 0.3;
   transition: 0.3s ease;
 }
+
+.label-type:focus{
+  border: 1px solid #444444;
+  outline: 1px solid #444444;
+}
