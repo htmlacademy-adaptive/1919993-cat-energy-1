@@ -6,10 +6,8 @@
   padding-left: 45px;
   line-height: 20px;
   margin: 0;
-  height: 30px;
 
   @media (min-width: variables.$tablet-width) {
-    padding-left: 60px;
     padding: 5px 0 5px 60px;
   }
 }
@@ -50,7 +48,7 @@
   transition: 0.3s ease;
 }
 
-.label-extra:focus{
+.label-extra:focus {
   border: 1px solid #444444;
   outline: 1px solid #444444;
 }

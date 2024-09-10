@@ -27,7 +27,7 @@
   @media (min-width: variables.$desktop-width) {
     flex-direction: row;
     gap: 80px;
-    display: grid ;
+    display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }

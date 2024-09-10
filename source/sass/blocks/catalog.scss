@@ -12,10 +12,6 @@
   }
 }
 
-.catalog__list{
-  position: relative;
-}
-
 .catalog__list::before {
   content: "";
   border-bottom: 1px solid #d9d9d9;
@@ -51,8 +47,8 @@
 .catalog__list {
   display: grid;
   grid-template-columns: 1fr;
-
   padding: 0;
+  position: relative;
 
   @media (min-width: variables.$tablet-width) {
     grid-template-columns: 1fr 1fr;

@@ -3,7 +3,8 @@
 .label {
   display: flex;
   align-items: center;
-
+  gap: 13px;
+  width: 100%;
 }
 
 .label__text {
@@ -13,7 +14,6 @@
   line-height: 112%;
   text-transform: uppercase;
   color: #444444;
-  min-width: fit-content;
 
   @media (min-width: variables.$tablet-width) {
     font-size: 20px;
@@ -31,7 +31,6 @@
   width: 100%;
   box-sizing: border-box;
   height: 45px;
-  margin-left: 13px;
   padding-left: 15px;
   cursor: pointer;
 
@@ -54,6 +53,7 @@
 }
 
 .label__input:invalid {
-  border: 2px solid #ffb2b2;
+  border: 1px solid #ffb2b2;
+  outline: 1px solid #ffb2b2;
   transition: 0.3s ease;
 }
