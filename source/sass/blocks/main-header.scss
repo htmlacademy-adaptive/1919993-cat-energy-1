@@ -6,26 +6,38 @@
   flex-wrap: wrap;
   position: relative;
   margin-top: 13px;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: variables.$tablet-width) {
     min-height: 50px;
     flex-wrap: nowrap;
     justify-content: space-between;
     margin-top: 18px;
+    border: none;
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-top: 12px;
+    margin-top: 11px;
+  }
+}
+
+.main-header__container {
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.main-header__logo {
+  margin-bottom: 16px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-top: 7px;
   }
 
-  &__container {
-    padding-bottom: 11px;
-
-    @media (min-width: variables.$tablet-width) {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 43px;
   }
 }
 

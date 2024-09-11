@@ -22,7 +22,7 @@
   background-image: linear-gradient(to bottom, #eaeaea 0%, #eaeaea 100%);
 
   @media (min-width: variables.$tablet-width) {
-    background-image: linear-gradient(to bottom, #ffffff 151px, #eaeaea 151px, #eaeaea 462px);
+    background-image: linear-gradient(to bottom, #ffffff 152px, #eaeaea 151px, #eaeaea 462px);
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -56,13 +56,13 @@
   justify-content: center;
   align-items: center;
   top: 110px;
+  color: #666666;
 
   @media (min-width: variables.$tablet-width) {
     top: 236px;
     left: 260px;
   }
 }
-
 
 .example-slider__comp::before {
   content: "";
@@ -80,7 +80,6 @@
     top: -238px;
   }
 }
-
 
 .example-slider__comp::after {
   content: "";

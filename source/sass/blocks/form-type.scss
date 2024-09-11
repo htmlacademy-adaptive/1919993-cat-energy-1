@@ -6,7 +6,7 @@
   position: relative;
   border-left: 0;
   border-right: 0;
-  padding-top: 29px;
+  padding-top: 20px;
   padding-bottom: 23px;
 
   @media (min-width: variables.$tablet-width) {
@@ -45,18 +45,20 @@
 .form-type__container {
   padding: 0;
   margin: 0;
-  gap: 26px;
+  gap: 13px;
   display: flex;
   flex-direction: column;
 
   @media (min-width: variables.$tablet-width) {
     border: 1px solid #d9d9d9;
-    width: 601px;
-    padding: 23px 0 27px 27px;
-    gap: 13px;
+    width: 600px;
+    padding: 20px 0 25px 27px;
+    gap: 15px;
   }
 
   @media (min-width: variables.$desktop-width) {
     width: 540px;
+    padding: 25px 0 25px 27px;
+    gap: 13px;
   }
 }

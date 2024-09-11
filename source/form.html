@@ -18,18 +18,15 @@
 <body class="page">
   <header class="main-header">
     <div class="main-header__container container">
-      <a class="main-header__logo logo" href="index.html">
+      <a class="main-header__logo logo logo--header" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-image-desktop.svg" width="70" height="59">
           <source media="(min-width: 768px)" srcset="img/logo-image-tablet.svg" width="60" height="50">
           <img class="logo__image" src="img/logo-image.svg" alt="Логотип Кэт энерджи" width="33" height="38">
         </picture>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo-text-desktop.svg">
-        <img class="logo__text" src="img/logo-text.svg" alt="Кэт энерджи">
-        </picture>
+        <img class="logo__text" src="img/logo-text.svg" alt="Кэт энерджи" width="101px" height="18px">
       </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list site-list--inner-page">
           <li class="site-list__item">
@@ -64,14 +61,14 @@
           <h2 class="visually-hidden">Контактные данные (владельца кота)</h2>
           <label class="label">
             <span class="label__text">имя:*</span>
-            <input class="label__input" type="text" name="name" placeholder="Барсик">
+            <input class="label__input" type="text" name="name" placeholder="Барсик" required>
           </label>
           <label class="label">
-            <span class="label__text">Вес (кг):*</span>
-            <input class="label__input" type="text" name="weight" placeholder="7">
+            <span class="label__text">Вес&nbsp;(кг):*</span>
+            <input class="label__input" type="text" name="weight" placeholder="7" required>
           </label>
           <label class="label">
-            <span class="label__text">Возраст (лет):</span>
+            <span class="label__text">Возраст&nbsp;(лет):</span>
             <input class="label__input" type="text" name="age" placeholder="7">
           </label>
         </section>
@@ -109,14 +106,14 @@
         <div class="container">
           <div class="fieldset-container form-feed__container">
             <label class="label-feed label">
-              <span class="label-feed__text label__text">E-mail:*</span>
-              <input class="label-feed__input label-feed__input--email label__text" type="email" name="email"
-                placeholder="kuklachev@gmail.com">
+              <span class="label-feed__text label__text">E&#8209;mail:*</span>
+              <input class="label-feed__input label-feed__input--email label__text label__input" type="email" name="email"
+                placeholder="kuklachev@gmail.com" required>
             </label>
             <label class="label-feed label">
               <span class="label-feed__text label__text">телефон:*</span>
-              <input class="label-feed__input label-feed__input--tel label__text" type="tel" name="phone"
-                placeholder="8 (960) 900-60-90">
+              <input class="label-feed__input label-feed__input--tel label__text label__input" type="tel" name="phone"
+                placeholder="8 (960) 900-60-90" required>
             </label>
           </div>
         </div>
@@ -183,7 +180,7 @@
 
 
   <footer class="main-footer">
-    <section class="address address--theme-gray">
+    <section class="address address--theme-grey">
       <div class="container">
         <div class="address__container">
           <h2 class="address__text">приглашаем
@@ -202,8 +199,8 @@
     <section class="main-footer__container">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="main-footer__wrapper container">
-        <a class="main-footer__logo logo">
-          <img class="logo__text" src="img/logo-text.svg" alt="Логотип Cat Energy" width="128" height="24">
+        <a class="main-footer__logo logo" href="index.html">
+          <img class="logo__text" src="img/logo-text-footer.svg" alt="Логотип Cat Energy" width="128" height="24">
         </a>
         <ul class="social-list">
           <li class="social-list__item">

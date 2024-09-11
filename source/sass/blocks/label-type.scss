@@ -5,23 +5,19 @@
   display: flex;
   line-height: 20px;
   margin: 0;
-
-  @media (min-width: variables.$tablet-width) {
-    height: 40px;
-  }
 }
 
 .label-type__text {
-  margin-left: 44px;
+  margin-left: 2px;
+  margin-top: 7px;
 
   @media (min-width: variables.$tablet-width) {
-    margin-left: 59px;
+    margin-left: 7px;
+    margin-top: 0;
   }
 }
 
 .label-type__radio-control {
-  position: absolute;
-  top: -7px;
   width: 28px;
   height: 28px;
   border: 1px solid #cdcdcd;
@@ -30,11 +26,11 @@
   align-items: center;
   border-radius: 50%;
   cursor: pointer;
+  flex-shrink: 0;
 
   @media (min-width: variables.$tablet-width) {
     width: 38px;
     height: 38px;
-    top: 0;
   }
 }
 
@@ -43,9 +39,6 @@
 }
 
 .label-type__input[type="radio"]:checked ~ .label-type__radio-control::before {
-  position: absolute;
-  top: 8px;
-  left: 7px;
   width: 13px;
   height: 13px;
   background-color: #68b738;
@@ -55,13 +48,6 @@
   @media (min-width: variables.$tablet-width) {
     width: 18px;
     height: 18px;
-    top: 9px;
-    left: 9px;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    top: 11px;
-    left: 11px;
   }
 }
 
@@ -74,4 +60,9 @@
 .label-type__input[type="radio"]:disabled ~ .label-type__text {
   opacity: 0.3;
   transition: 0.3s ease;
+}
+
+.label-type:focus {
+  border: 1px solid #444444;
+  outline: 1px solid #444444;
 }

@@ -33,7 +33,6 @@
   }
 }
 
-
 .site-list__item {
   border-top: 1px solid #e6e6e6;
   display: flex;
@@ -56,9 +55,12 @@
   &--active {
     @media (min-width: variables.$tablet-width) {
       border-bottom: 2px solid #68b738;
-      padding-bottom: 12px;
-      height: 24px;
+      min-height: 24px;
       pointer-events: none;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      padding-bottom: 5px;
     }
   }
 

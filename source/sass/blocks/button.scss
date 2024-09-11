@@ -11,8 +11,9 @@
   background-color: #68b738;
   border: none;
   text-decoration: none;
-  padding: 10px 0;
+  padding: 10px 20px;
   cursor: pointer;
+  box-sizing: border-box;
 
   &--secondary {
     background-color: #f2f2f2;
@@ -54,4 +55,5 @@
 .button--secondary:hover,
 .button--secondary:active {
   background: #ebebeb;
+  color: #444444;
 }

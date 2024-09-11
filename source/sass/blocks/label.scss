@@ -3,6 +3,19 @@
 .label {
   display: flex;
   align-items: center;
+  gap: 13px;
+  width: 100%;
+  cursor: pointer;
+
+  &:has(input[type="checkbox"]:focus-visible) {
+    outline: 1px solid #444444;
+    outline-offset: 2px;
+  }
+
+  &:has(input[type="radio"]:focus-visible) {
+    outline: 1px solid #444444;
+    outline-offset: 2px;
+  }
 }
 
 .label__text {
@@ -12,7 +25,6 @@
   line-height: 112%;
   text-transform: uppercase;
   color: #444444;
-  min-width: fit-content;
 
   @media (min-width: variables.$tablet-width) {
     font-size: 20px;
@@ -30,9 +42,7 @@
   width: 100%;
   box-sizing: border-box;
   height: 45px;
-  margin-left: 13px;
   padding-left: 15px;
-  cursor: pointer;
 
   @media (min-width: variables.$tablet-width) {
     height: 52px;
@@ -47,11 +57,13 @@
 }
 
 .label__input:focus {
-  border: 2px solid #444444;
+  border: 1px solid #444444;
+  outline: 1px solid #444444;
   transition: 0.3s ease;
 }
 
-.label__input:invalid {
-  border: 2px solid #ffb2b2;
+.label__input:invalid:not(:focus-visible) {
+  border: 1px solid #ffb2b2;
+  outline: 1px solid #ffb2b2;
   transition: 0.3s ease;
 }
