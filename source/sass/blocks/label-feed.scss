@@ -51,11 +51,6 @@
   width: fit-content;
 }
 
-.label-feed__text {
-  margin-right: 13px;
-}
-
-
 .label-feed__input:hover {
   border: 1px solid #cdcdcd;
   transition: 0.3s ease;
@@ -75,16 +70,16 @@
   background-image: url("../img/form-tel-focus.svg");
 }
 
-.label-feed__input:invalid {
+.label-feed__input:invalid:not(:focus-visible) {
   border: 1px solid #ff8282;
   outline: 1px solid #ff8282;
   transition: 0.3s ease;
 }
 
-.label-feed__input--email:invalid {
+.label-feed__input--email:invalid:not(:focus-visible) {
   background-image: url("../img/form-email-invalid.svg");
 }
 
-.label-feed__input--tel:invalid {
+.label-feed__input--tel:invalid:not(:focus-visible) {
   background-image: url("../img/form-tel-invalid.svg");
 }

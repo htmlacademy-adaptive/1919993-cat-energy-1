@@ -85,8 +85,9 @@
 
 .additional-item__button {
   @media (min-width: variables.$desktop-width) {
-    width: 204px;
+    width: 244px;
     height: fit-content;
+    margin-top: 3px;
   }
 }
 

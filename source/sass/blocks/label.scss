@@ -5,6 +5,17 @@
   align-items: center;
   gap: 13px;
   width: 100%;
+  cursor: pointer;
+
+  &:has(input[type="checkbox"]:focus-visible) {
+    outline: 1px solid #444444;
+    outline-offset: 2px;
+  }
+
+  &:has(input[type="radio"]:focus-visible) {
+    outline: 1px solid #444444;
+    outline-offset: 2px;
+  }
 }
 
 .label__text {
@@ -32,7 +43,6 @@
   box-sizing: border-box;
   height: 45px;
   padding-left: 15px;
-  cursor: pointer;
 
   @media (min-width: variables.$tablet-width) {
     height: 52px;
@@ -52,7 +62,7 @@
   transition: 0.3s ease;
 }
 
-.label__input:invalid {
+.label__input:invalid:not(:focus-visible) {
   border: 1px solid #ffb2b2;
   outline: 1px solid #ffb2b2;
   transition: 0.3s ease;

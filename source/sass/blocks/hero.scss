@@ -65,12 +65,13 @@
 
   @media (min-width: variables.$desktop-width) {
     min-height: 580px;
-    margin-bottom: 85px;
+    margin-bottom: 80px;
 
     .hero__container {
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "title image" "description image" "button image";
       grid-template-rows: min-content min-content 1fr;
+      padding-top: 24px;
     }
 
     .hero__image {
@@ -139,10 +140,10 @@
 
 .hero__button {
   padding: 10px 0;
-  width: 240px;
+  width: 100%;
 
   @media (min-width: variables.$tablet-width) {
-    width: 204px;
+    width: 244px;
     margin-left: 90px;
     padding: 17px 0;
     line-height: 26px;

@@ -7,14 +7,22 @@
 
   @media (min-width: variables.$tablet-width) {
     gap: 13px;
-    margin-top: 7px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-top: 43px;
+    &--header {
+      .logo__text {
+        width: 118px;
+        height: 21px;
+      }
+    }
   }
 }
 
 .logo__text {
-  margin-bottom: 3px;
+  display: block;
+}
+
+.logo__image {
+  display: block;
 }

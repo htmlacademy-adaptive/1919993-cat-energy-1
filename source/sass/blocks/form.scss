@@ -2,14 +2,14 @@
 
 .form__button {
   margin-bottom: 21px;
-  width: 240px;
+  width: 100%;
 
   @media (min-width: variables.$tablet-width) {
-    width: 244px;
+    width: 284px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 530px;
+    width: 570px;
   }
 }
 

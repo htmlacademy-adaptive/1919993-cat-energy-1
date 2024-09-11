@@ -129,7 +129,6 @@
   text-decoration: none;
 }
 
-
 .catalog-item__description {
   font-size: 12px;
   line-height: 16px;
@@ -185,15 +184,14 @@
   }
 }
 
-
 .catalog-item__button {
   @media (min-width: variables.$tablet-width) {
-    width: 210px;
+    width: 250px;
     margin: 0 auto;
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 129px;
+    width: 169px;
   }
 }
 

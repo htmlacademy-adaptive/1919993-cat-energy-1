@@ -17,6 +17,8 @@
   @media (min-width: variables.$desktop-width) {
     background: linear-gradient(to bottom, #ffffff 161px, #eaeaea 161px, #eaeaea 462px);
     min-height: 598px;
+    border: none;
+    padding-top: 25px;
 
     .example__container {
       display: grid;

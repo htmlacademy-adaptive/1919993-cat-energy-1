@@ -29,8 +29,9 @@
     z-index: 1;
     margin-top: 95px;
     background-color: #ffffff;
-    min-height: 135px;
-    overflow: hidden;
+    min-height: 80px;
+    max-height: 80px;
+    overflow: auto;
   }
 }
 

@@ -9,17 +9,9 @@ let sliderWidth = 0;
 
 navMain.classList.remove('main-nav--nojs');
 
-navToggle.addEventListener('click', function () {
-  if (navMain.classList.contains('main-nav--opened')) {
-    avMain.classList.remove('main-nav--opened');
-    navMain.classList.add('main-nav--closed');
-    n
-  }
-  else {
-    navMain.classList.add('main-nav--opened');
 
-    navMain.classList.remove('main-nav--closed');
-  }
+navToggle.addEventListener('click', function () {
+  navMain.classList.toggle('main-nav--opened');
 });
 
 function slide(x) {
